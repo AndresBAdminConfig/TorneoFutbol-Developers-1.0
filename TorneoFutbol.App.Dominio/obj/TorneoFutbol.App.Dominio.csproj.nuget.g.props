@@ -7,7 +7,11 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Felipe\.nuget\packages\</NuGetPackageFolders>
+=======
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\maure\.nuget\packages\</NuGetPackageFolders>
+>>>>>>> 3ed819b4462c4a0747d2f6c76f167a950f7e3f23
 =======
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\maure\.nuget\packages\</NuGetPackageFolders>
 >>>>>>> 3ed819b4462c4a0747d2f6c76f167a950f7e3f23
@@ -20,7 +24,11 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <SourceRoot Include="C:\Users\Felipe\.nuget\packages\" />
+=======
+    <SourceRoot Include="C:\Users\maure\.nuget\packages\" />
+>>>>>>> 3ed819b4462c4a0747d2f6c76f167a950f7e3f23
 =======
     <SourceRoot Include="C:\Users\maure\.nuget\packages\" />
 >>>>>>> 3ed819b4462c4a0747d2f6c76f167a950f7e3f23
