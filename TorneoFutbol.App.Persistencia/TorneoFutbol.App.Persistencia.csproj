@@ -17,4 +17,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TorneoFutbol.App.Dominio\TorneoFutbol.App.Dominio.csproj" />
+  </ItemGroup>
+
 </Project>

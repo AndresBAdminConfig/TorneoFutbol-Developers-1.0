@@ -1,26 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "dgSpecHash": "vJqyNy0zd4EOLakDb6vKLvtzATnD+fIa8b7zbfvrar/vpzYN/uTchs65lo+Ggej+xjEfqxQp+c/BRPSUv2Nnhw==",
+  "dgSpecHash": "Gn+x3a6ccvN5AKOzGcVjxmJ+RtuJekF724H/NIlsCyzxF7WwX60L+7+HFfnjljVTEIMMrqoz/Y89WIG7KrajTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Felipe\\Desktop\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
-=======
-  "dgSpecHash": "Mc6f1KjlaHshnYjKN2XdC6wAnjEdMexBXuP+vPpZw89lw4RCkzCFDw8pfr8v+kC1Zb27hUU6ntUjeDadsBMlgQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\maure\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
->>>>>>> 3ed819b4462c4a0747d2f6c76f167a950f7e3f23
-=======
-  "dgSpecHash": "Mc6f1KjlaHshnYjKN2XdC6wAnjEdMexBXuP+vPpZw89lw4RCkzCFDw8pfr8v+kC1Zb27hUU6ntUjeDadsBMlgQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\maure\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
->>>>>>> 3ed819b4462c4a0747d2f6c76f167a950f7e3f23
-=======
-  "dgSpecHash": "Mc6f1KjlaHshnYjKN2XdC6wAnjEdMexBXuP+vPpZw89lw4RCkzCFDw8pfr8v+kC1Zb27hUU6ntUjeDadsBMlgQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\maure\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
->>>>>>> 3ed819b4462c4a0747d2f6c76f167a950f7e3f23
+  "projectFilePath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
