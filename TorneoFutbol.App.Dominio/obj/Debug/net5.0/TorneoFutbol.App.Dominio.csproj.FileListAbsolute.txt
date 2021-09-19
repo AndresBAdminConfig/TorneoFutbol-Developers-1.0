@@ -10,3 +10,15 @@ C:\Users\Felipe\Desktop\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Domi
 C:\Users\Felipe\Desktop\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.dll
 C:\Users\Felipe\Desktop\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbol.App.Dominio.dll
 C:\Users\Felipe\Desktop\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.pdb
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\bin\Debug\net5.0\TorneoFutbol.App.Dominio.deps.json
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\bin\Debug\net5.0\TorneoFutbol.App.Dominio.dll
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\bin\Debug\net5.0\ref\TorneoFutbol.App.Dominio.dll
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\bin\Debug\net5.0\TorneoFutbol.App.Dominio.pdb
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.AssemblyInfo.cs
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.dll
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbol.App.Dominio.dll
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.pdb

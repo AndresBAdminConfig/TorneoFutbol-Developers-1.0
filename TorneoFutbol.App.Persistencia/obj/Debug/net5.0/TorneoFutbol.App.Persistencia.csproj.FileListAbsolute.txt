@@ -16,3 +16,21 @@ C:\Users\Felipe\Desktop\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Pers
 C:\Users\Felipe\Desktop\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\ref\TorneoFutbol.App.Persistencia.dll
 C:\Users\Felipe\Desktop\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.pdb
 C:\Users\Felipe\Desktop\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.genruntimeconfig.cache
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\bin\Debug\net5.0\TorneoFutbol.App.Persistencia.deps.json
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\bin\Debug\net5.0\TorneoFutbol.App.Persistencia.runtimeconfig.json
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\bin\Debug\net5.0\TorneoFutbol.App.Persistencia.runtimeconfig.dev.json
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\bin\Debug\net5.0\TorneoFutbol.App.Persistencia.dll
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\bin\Debug\net5.0\ref\TorneoFutbol.App.Persistencia.dll
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\bin\Debug\net5.0\TorneoFutbol.App.Persistencia.pdb
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\bin\Debug\net5.0\TorneoFutbol.App.Dominio.dll
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\bin\Debug\net5.0\TorneoFutbol.App.Dominio.pdb
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.csproj.AssemblyReference.cache
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.AssemblyInfo.cs
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.csproj.CopyComplete
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.dll
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\ref\TorneoFutbol.App.Persistencia.dll
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.pdb
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.genruntimeconfig.cache

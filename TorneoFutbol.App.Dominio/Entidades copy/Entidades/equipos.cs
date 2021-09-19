@@ -3,7 +3,7 @@ namespace TorneoFutbol.App.Dominio
     public class equipos
     {
         // Identificador único de cada persona
-        public int  Id_Equipos  { get; set; }
+        public int  Id  { get; set; }
         public string Nombre { get; set; }
         //Relacion Equipo y Jugadores
         public System.Collections.Generic.List<Jugadores> Jugadores { get; set; }
