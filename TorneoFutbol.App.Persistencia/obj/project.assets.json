@@ -5798,19 +5798,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maure\\.nuget\\packages\\": {}
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maure\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj",
       "projectName": "TorneoFutbol.App.Persistencia",
-      "projectPath": "C:\\Users\\maure\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj",
-      "packagesPath": "C:\\Users\\maure\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maure\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\obj\\",
+      "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\maure\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
