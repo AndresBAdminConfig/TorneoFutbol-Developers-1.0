@@ -7,6 +7,8 @@ namespace TorneoFutbol.App.Dominio
         public string Nombre { get; set; }
         public string Numero { get; set; }
         public string Posicion { get; set; }
+        //Relación entre Jugadores y equipos
+        public equipos equipos{get; set;}
 
     }
 }

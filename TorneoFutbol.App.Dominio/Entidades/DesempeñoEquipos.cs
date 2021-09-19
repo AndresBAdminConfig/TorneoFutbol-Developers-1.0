@@ -4,7 +4,6 @@ namespace TorneoFutbol.App.Dominio
     {
         // Identificador único de cada persona
         public int  Id_Desempeño  { get; set; }
-        public Id_Equipos  IdEquipos { get; set; }
         public int Cantidad_Partidos_Jugados { get; set; }
         public int Cantidad_Partidos_Ganados { get; set; }
         public int Cantidad_Partidos_Empatados { get; set; }

@@ -6,6 +6,10 @@ namespace TorneoFutbol.App.Dominio
         public int  Id  { get; set; }
         public string Nombre { get; set; }
         public string Direccion { get; set; }
+        //Relacion Estadio y Municipio
+        public Municipio Municipio{get; set;}
+        
+
         
 
     }
