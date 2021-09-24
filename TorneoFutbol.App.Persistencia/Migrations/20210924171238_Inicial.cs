@@ -2,7 +2,7 @@
 
 namespace TorneoFutbol.App.Persistencia.Migrations
 {
-    public partial class Entidades : Migration
+    public partial class Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

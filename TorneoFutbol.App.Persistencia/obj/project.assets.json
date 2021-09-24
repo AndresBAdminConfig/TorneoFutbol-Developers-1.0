@@ -5814,19 +5814,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leidy Moreno\\.nuget\\packages\\": {}
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leidy Moreno\\OneDrive\\Documentos\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj",
       "projectName": "TorneoFutbol.App.Persistencia",
-      "projectPath": "C:\\Users\\Leidy Moreno\\OneDrive\\Documentos\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj",
-      "packagesPath": "C:\\Users\\Leidy Moreno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leidy Moreno\\OneDrive\\Documentos\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\obj\\",
+      "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Leidy Moreno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5838,8 +5838,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Leidy Moreno\\OneDrive\\Documentos\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\Leidy Moreno\\OneDrive\\Documentos\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj"
+            "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj"
             }
           }
         }
