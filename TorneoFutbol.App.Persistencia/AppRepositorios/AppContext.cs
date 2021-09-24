@@ -4,7 +4,19 @@ namespace TorneoFutbol.App.Persistencia
 {
     public class AppContext : DbContext
     {
-        public DbSet<Jugadores> Jugadores {get;set;}
+        public DbSet<Jugadores> Jugadore {get;set;}
+        public DbSet<Arbitro> Arbitros{get; set;}
+        public DbSet<DesempeñoEquipos> DesempeñoEquip {get; set;}
+        public DbSet<DirectorTecnico> DirectoresTecnicos {get; set;}
+        public DbSet<equipos> equipo {get; set;}
+        public DbSet<Estadio> Estadios{get; set;}
+        public DbSet<Goles> Gol{get; set;}
+        public DbSet<Municipio> Municipios{get; set;}
+        public DbSet<Partidos> Partido{get; set;}
+        public DbSet<Reporte> Reportes{get; set;}
+
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if(!optionsBuilder.IsConfigured)
