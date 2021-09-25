@@ -8,6 +8,7 @@ namespace TorneoFutbol.App.Consola
         private static IRepositorioEstadios _repoEstadio =  new RepositorioEstadios(new Persistencia.AppContext());                
         private static IRepositorioReporte _repoReporte =  new RepositorioReporte(new Persistencia.AppContext());
         private static IRepositorioJugador _repoJugador = new RepositorioJugador();
+        private static IRepositorioMunicipio _repoMunicipio = new RepositorioMunicipio();
 
         static void Main(string[] args)
         {
@@ -21,6 +22,9 @@ namespace TorneoFutbol.App.Consola
             //AddJugadores();
             //DeleteJugador();
             //IndexJugador();
+            AddMunicipio();
+            //DeleteMunicipio();
+            //IndexMunicipio();
             
 
         }
@@ -89,6 +93,26 @@ namespace TorneoFutbol.App.Consola
         private static void DeleteJugador()
         {
             _repoJugador.DeleteJugador(2);
+        }
+        private static void AddMunicipio()
+        {
+            var municipio = new Municipio
+            {
+                Nombre = "Manizales",
+                
+            };
+            _repoMunicipio.AddMunicipio(municipio);
+        }
+        private static void IndexMunicipio()
+        {
+            foreach (var municipio in _repoMunicipio.GetAllMunicipio())
+            {
+                Console.WriteLine(municipio.Nombre );
+            }
+        }
+        private static void DeleteMunicipio()
+        {
+            _repoMunicipio.DeleteMunicipio(2);
         }
         
     }
