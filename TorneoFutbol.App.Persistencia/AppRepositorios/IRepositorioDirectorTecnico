@@ -1,0 +1,17 @@
+using System.Collections.Generic;
+using TorneoFutbol.App.Dominio;
+
+namespace TorneoFutbol.App.Persistencia
+{
+
+    public interface IRepositorioDirectorTecnico
+    {
+        DirectorTecnico AddEstadio(DirectorTecnico directortecnico);
+        IEnumerable<DirectorTecnico> GetAllDirectorTecnico();
+        void DeleteDirectorTecnico(int idDirectorTecnico);
+        public DirectorTecnico GetDirectorTecnico(int idDirectorTecnico);
+        public DirectorTecnico UpdateDirectorTecnico(DirectorTecnico directortecnico);
+
+    }
+
+}
