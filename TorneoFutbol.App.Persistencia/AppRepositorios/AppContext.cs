@@ -4,7 +4,7 @@ namespace TorneoFutbol.App.Persistencia
 {
     public class AppContext : DbContext
     {
-        public DbSet<Jugadores> Jugadore {get;set;}
+        public DbSet<Jugadores> Jugador {get;set;}
         public DbSet<Arbitro> Arbitros{get; set;}
         public DbSet<DesempeñoEquipos> DesempeñoEquip {get; set;}
         public DbSet<DirectorTecnico> DirectoresTecnicos {get; set;}
