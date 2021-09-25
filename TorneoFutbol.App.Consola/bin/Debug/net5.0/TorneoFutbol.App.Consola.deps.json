@@ -9,6 +9,7 @@
       "TorneoFutbol.App.Consola/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "5.0.0",
+          "TorneoFutbol.App.Dominio": "1.0.0",
           "TorneoFutbol.App.Persistencia": "1.0.0"
         },
         "runtime": {
