@@ -13,7 +13,7 @@ namespace TorneoFutbol.App.Persistencia
         }
 
         //Arbitros IRepositorioArbitros.AddArbitros(Arbitros arbitros)
-        Arbitros AddArbitros (Arbitros arbitros)
+        Arbitros IRepositorioArbitros.AddArbitros (Arbitros arbitros)
         {
             var arbitrosAdicionado = _appContext.Arbitros.Add(arbitros);
             _appContext.SaveChanges();

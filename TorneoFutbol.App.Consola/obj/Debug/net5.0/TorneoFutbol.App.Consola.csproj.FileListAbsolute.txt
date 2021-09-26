@@ -202,3 +202,6 @@ C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.C
 C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\ref\TorneoFutbol.App.Consola.dll
 C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\TorneoFutbol.App.Consola.pdb
 C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\TorneoFutbol.App.Consola.genruntimeconfig.cache
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\TorneoFutbol.App.Consola.dll
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\ref\TorneoFutbol.App.Consola.dll
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\TorneoFutbol.App.Consola.pdb

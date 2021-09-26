@@ -9,6 +9,7 @@ namespace TorneoFutbol.App.Consola
         private static IRepositorioReporte _repoReporte =  new RepositorioReporte(new Persistencia.AppContext());
         private static IRepositorioJugador _repoJugador = new RepositorioJugador();
         private static IRepositorioMunicipio _repoMunicipio = new RepositorioMunicipio();
+        private static IRepositorioGoles _repoGoles = new RepositorioGoles();
 
         static void Main(string[] args)
         {
@@ -31,8 +32,9 @@ namespace TorneoFutbol.App.Consola
             AddDesempeñoEquipos();
             IndexDesempeñoEquipos();
             DeleteDesempeñoEquipos();
-            
-
+            AddGoles();
+            IndexGoles();
+            DeleteGoles();
         }
 
         private static void AddEstadio()
@@ -171,6 +173,29 @@ namespace TorneoFutbol.App.Consola
         private static void DeleteDesempeñoEquipos()
         {
             _repoDesempeñoEquipos.DeleteDesempeñoEquipos(2); 
+        }
+        //Program Goles
+        private static void AddGoles()
+        {
+            var Goles = new Goles
+            {
+                Id = "",
+                MinutoGol = "",
+                IdJugador = ""
+            };
+            _repoGoles.AddGoles(Goles);
+        }
+        
+        private static void IndexGoles()
+        {
+            foreach (var goles in _repoGoles.GetAllGoles())
+            {
+                Console.WriteLine(Goles.Id);
+            }
+        }
+        private static void DeleteGoles()
+        {
+            _repoGoles.DeleteGoles(2);
         }
     }
 }
