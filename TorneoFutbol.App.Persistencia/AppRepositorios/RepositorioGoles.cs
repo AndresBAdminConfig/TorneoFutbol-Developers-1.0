@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using TorneoFutbol.App.Dominio;
+
 namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioGoles : IRepositorioGoles
     {
+        
         private readonly AppContext _appContext;
         public RepositorioGoles(AppContext appContext)
         {
@@ -20,7 +22,7 @@ namespace TorneoFutbol.App.Persistencia
         {
             return _appContext.Goles;
         }
-        public void IRepositorioGoles.DeleteGoles(int idGoles)
+        public void DeleteGoles(int idGoles)
         {
             var GolesEncontrado = _appContext.Goles.Find(idGoles);
             if (GolesEncontrado == null)
@@ -28,11 +30,11 @@ namespace TorneoFutbol.App.Persistencia
             _appContext.Goles.Remove(GolesEncontrado);
             _appContext.SaveChanges();
         }
-        public Goles IRepositorioGoles.GetGoles(int idGoles)
+        public Goles GetGoles(int idGoles)
         {
             return _appContext.Goles.Find(idGoles);
         } 
-        public Goles IRepositorioGoles.UpdateGoles(Goles goles)
+        public Goles UpdateGoles(Goles goles)
         {
             var GolesEncontrado = _appContext.Goles.Find(idGoles);
             if (GolesEncontrado != null)
@@ -43,5 +45,6 @@ namespace TorneoFutbol.App.Persistencia
                 _appContext.SaveChanges();
             }
             return GolesEncontrado;
+        }
     }
 }

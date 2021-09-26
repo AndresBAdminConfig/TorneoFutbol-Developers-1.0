@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using TorneoFutbol.App.Dominio;
+
 namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioPartidos : IRepositorioPartidos
@@ -8,7 +11,7 @@ namespace TorneoFutbol.App.Persistencia
             _appContext - appContext;
         }
 
-        Partidos AddPartidos(Partidos Partido);
+        Partidos AddPartidos(Partidos Partido)
         {
             var PartidosAdicionado = _appContext.Partidos.Add(Partido);
             _appContext.SaveChanges();

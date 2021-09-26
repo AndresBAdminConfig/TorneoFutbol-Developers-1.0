@@ -52,3 +52,11 @@ C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.P
 C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\ref\TorneoFutbol.App.Persistencia.dll
 C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.pdb
 C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.genruntimeconfig.cache
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.csproj.AssemblyReference.cache
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.AssemblyInfo.cs
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.dll
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\ref\TorneoFutbol.App.Persistencia.dll
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.pdb

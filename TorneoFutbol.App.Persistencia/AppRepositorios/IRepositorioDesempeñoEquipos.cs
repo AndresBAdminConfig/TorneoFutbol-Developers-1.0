@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TorneoFutbol.App.Dominio;
+
 namespace TorneoFutbol.App.Persistencia
 
 {

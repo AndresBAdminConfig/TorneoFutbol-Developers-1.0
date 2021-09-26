@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using TorneoFutbol.App.Dominio;
+
 namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioArbitros : IRepositorioArbitros
     {
+
         private readonly AppContext _appContext;
         public RepositorioArbitros(AppContext appContext)
         {
@@ -20,7 +22,7 @@ namespace TorneoFutbol.App.Persistencia
         {
             return _appContext.Arbitros;
         }
-        public void IRepositorioArbitros.DeleteArbitros(int idArbitros)
+        public void DeleteArbitros(int idArbitros)
         {
             var ArbitrosEncontrado = _appContext.Arbitros.Find(idArbitros);
             if (ArbitrosEncontrado == null)
@@ -28,11 +30,11 @@ namespace TorneoFutbol.App.Persistencia
             _appContext.Arbitros.Remove(ArbitrosEncontrado);
             _appContext.SaveChanges();
         }
-        public Arbitros IRepositorioArbitros.GetArbitros(int idArbitros)
+        public Arbitros GetArbitros(int idArbitros)
         {
             return _appContext.Arbitros.Find(idArbitros);
         } 
-        public Arbitros IRepositorioArbitros.UpdateArbitros(Arbitros arbitros)
+        public Arbitros UpdateArbitros(Arbitros arbitros)
         {
             var ArbitrosEncontrado = _appContext.Arbitros.Find(idArbitros);
             if (ArbitrosEncontrado != null)
@@ -44,5 +46,6 @@ namespace TorneoFutbol.App.Persistencia
                 _appContext.SaveChanges();
             }
             return ArbitrosEncontrado;
+        }
     }
 }
