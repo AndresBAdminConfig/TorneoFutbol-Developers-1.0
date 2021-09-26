@@ -8,8 +8,8 @@ namespace TorneoFutbol.App.Persistencia
         Partidos AddPartidos(Partidos Partido);
         IEnumerable<Partidos> GetAllPartidos();
         void DeletePartidos (int idPartidos);
-        public Partidos UpdatePartidos(Partidos Partido);
-        public Partidos GetPartidos(int idPartidos);
+        Partidos UpdatePartidos(Partidos Partido);
+        Partidos GetPartidos(int idPartidos);
 
 
     }

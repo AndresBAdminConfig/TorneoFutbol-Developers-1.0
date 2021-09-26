@@ -9,8 +9,8 @@ namespace TorneoFutbol.App.Persistencia
         DesempeñoEquipos AddDesempeñoEquipos(DesempeñoEquipos Desempeño);
         IEnumerable<DesempeñoEquipos> GetAllDesempeñoEquipos();
         void DeleteDesempeñoEquipos (int idDesempeño);
-        public DesempeñoEquipos UpdateDesempeñoEquipos(DesempeñoEquipos Desempeño);
-        public DesempeñoEquipos GetDesempeñoEquipos(int idDesempeño);
+        DesempeñoEquipos UpdateDesempeñoEquipos(DesempeñoEquipos Desempeño);
+        DesempeñoEquipos GetDesempeñoEquipos(int idDesempeño);
 
 
     }

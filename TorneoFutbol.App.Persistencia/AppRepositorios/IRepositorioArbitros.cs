@@ -8,7 +8,7 @@ namespace TorneoFutbol.App.Persistencia
         Arbitros AddArbitros(Arbitros arbitros);
         IEnumerable<Arbitros> GetAllArbitros();
         void DeleteArbitros(int idArbitros);
-        public Arbitros UpdateArbitros(Arbitros arbitros);    
-        public Arbitros GetArbitros(int idArbitros);
+        Arbitros UpdateArbitros(Arbitros arbitros);    
+        Arbitros GetArbitros(int idArbitros);
     }
 }

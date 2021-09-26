@@ -8,7 +8,7 @@ namespace TorneoFutbol.App.Persistencia
         Goles AddGoles(Goles goles);
         IEnumerable<Goles> GetAllGoles();
         void DeleteGoles(int idGoles);
-        public Goles UpdateGoles(Goles goles);    
-        public Goles GetGoles(int idGoles);
+        Goles UpdateGoles(Goles goles);    
+        Goles GetGoles(int idGoles);
     }
 }

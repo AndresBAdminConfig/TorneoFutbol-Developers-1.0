@@ -8,7 +8,7 @@ namespace TorneoFutbol.App.Persistencia
         Jugadores AddJugadores(Jugadores jugadores);
         IEnumerable<Jugadores> GetAllJugador();
         void DeleteJugador(int idJugador);
-        public Jugadores GetJugador(int idJugador);
-        public Jugadores UpdateJugador(Jugadores jugadores);
+        Jugadores GetJugador(int idJugador);
+        Jugadores UpdateJugador(Jugadores jugadores);
     }
 }

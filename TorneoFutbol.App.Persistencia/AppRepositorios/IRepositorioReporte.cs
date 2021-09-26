@@ -9,8 +9,8 @@ namespace TorneoFutbol.App.Persistencia
         Reporte AddReporte(Reporte reporte);
         IEnumerable<Reporte> GetAllReportes();
         void DeleteReporte(int idReporte);
-        public Reporte GetReporte(int idReporte);
-        public Reporte UpdateReporte(Reporte reporte);
+        Reporte GetReporte(int idReporte);
+        Reporte UpdateReporte(Reporte reporte);
 
     }
 

@@ -9,8 +9,8 @@ namespace TorneoFutbol.App.Persistencia
         DirectorTecnico AddEstadio(DirectorTecnico directortecnico);
         IEnumerable<DirectorTecnico> GetAllDirectorTecnico();
         void DeleteDirectorTecnico(int idDirectorTecnico);
-        public DirectorTecnico GetDirectorTecnico(int idDirectorTecnico);
-        public DirectorTecnico UpdateDirectorTecnico(DirectorTecnico directortecnico);
+        DirectorTecnico GetDirectorTecnico(int idDirectorTecnico);
+        DirectorTecnico UpdateDirectorTecnico(DirectorTecnico directortecnico);
 
     }
 
