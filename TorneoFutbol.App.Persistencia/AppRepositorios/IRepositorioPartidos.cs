@@ -5,11 +5,11 @@ namespace TorneoFutbol.App.Persistencia
 {
     public interface IRepositorioPartidos
     {
-        IEnumerable<Partidos> GetAllPartidos();
         Partidos AddPartidos(Partidos Partido);
-        Partidos UpdatePartidos(Partidos Partido);
+        IEnumerable<Partidos> GetAllPartidos();
         void DeletePartidos (int idPartidos);
-        Partidos GetPartidos(int idPartidos);
+        public Partidos UpdatePartidos(Partidos Partido);
+        public Partidos GetPartidos(int idPartidos);
 
 
     }

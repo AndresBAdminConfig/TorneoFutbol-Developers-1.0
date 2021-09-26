@@ -6,11 +6,11 @@ namespace TorneoFutbol.App.Persistencia
 {
     public interface IRepositorioDesempeñoEquipos
     {
-        IEnumerable<DesempeñoEquipos> GetAllDesempeñoEquipos();
         DesempeñoEquipos AddDesempeñoEquipos(DesempeñoEquipos Desempeño);
-        DesempeñoEquipos UpdateDesempeñoEquipos(DesempeñoEquipos Desempeño);
+        IEnumerable<DesempeñoEquipos> GetAllDesempeñoEquipos();
         void DeleteDesempeñoEquipos (int idDesempeño);
-        DesempeñoEquipos GetDesempeñoEquipos(int idDesempeño);
+        public DesempeñoEquipos UpdateDesempeñoEquipos(DesempeñoEquipos Desempeño);
+        public DesempeñoEquipos GetDesempeñoEquipos(int idDesempeño);
 
 
     }

@@ -9,7 +9,7 @@ namespace TorneoFutbol.App.Persistencia
         private readonly AppContext _appContext;
         public RepositorioDesempeñoEquipos(AppContex appContext)
         {
-            _appContext - appContext;
+            _appContext = appContext;
         }
 
         DesempeñoEquipos IRepositorioDesempeñoEquipos.AddDesempeñoEquipos(DesempeñoEquipos Desempeño)
@@ -18,6 +18,6 @@ namespace TorneoFutbol.App.Persistencia
             _appContext.SaveChanges();
             return DesempeñoEquiposAdicionado.Entity;
         }
-
+        
     }
 }
