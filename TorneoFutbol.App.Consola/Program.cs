@@ -25,6 +25,12 @@ namespace TorneoFutbol.App.Consola
             AddMunicipio();
             //DeleteMunicipio();
             //IndexMunicipio();
+            AddPartidos();
+            IndexPartidos();
+            DeletePartidos();
+            AddDesempeñoEquipos();
+            IndexDesempeñoEquipos();
+            DeleteDesempeñoEquipos();
             
 
         }
@@ -114,6 +120,57 @@ namespace TorneoFutbol.App.Consola
         {
             _repoMunicipio.DeleteMunicipio(2);
         }
-        
+        private static void AddPartidos()
+        {
+            var Partido = new Partidos 
+            {
+                Id = "",
+                FechaHora = "",
+                EquipoLocal = "",
+                MarcadorInicial = "0-0",
+                EquipoVisitante = "",
+                MarcadorFinal = " - "
+                Colegio = ""
+            }
+            _repoPartidos.AddPartidos(Partido);
+        }
+        private static void IndexPartido()
+        {
+            foreach (var Partido in _repoPartidos.GetAllPartidos())
+
+            {
+                Console.WriteLine(Partido.Id );
+            }
+        }
+        private static void DeletePartidos()
+        {
+            _repoPartidos.DeletePartidos(2); 
+        }
+        private static void AddDesempeñoEquipos()
+        {
+            var DesempeñoEquipos = new DesempeñoEquipos 
+            {
+                Id = "",
+                FechaHora = "",
+                Cantidad_Partidos_Jugados = "5",
+                Cantidad_Partidos_Ganados = "",
+                Cantidad_Partidos_Empatados = "",
+                GF = ""
+                GC = ""
+                Puntos = ""
+            }
+            _repoDesempeñoEquipos.AddDesempeñoEquipos(DesempeñoEquipos)
+        }
+        private static void IndexDesempeñoEquipos
+        {
+            foreach (var DesempeñoEquipos in _repoDesempeñoEquipos.GetAllDesempeñoEquipos)
+            {
+                Console.WriteLine(DesempeñoEquipos.Id);
+            }
+        }
+        private static void DeleteDesempeñoEquipos()
+        {
+            _repoDesempeñoEquipos.DeleteDesempeñoEquipos(2); 
+        }
     }
 }
