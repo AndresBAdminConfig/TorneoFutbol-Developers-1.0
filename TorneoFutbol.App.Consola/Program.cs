@@ -197,5 +197,30 @@ namespace TorneoFutbol.App.Consola
         {
             _repoGoles.DeleteGoles(2);
         }
+        //Program Arbitros
+        private static void AddArbitros()
+        {
+            var Arbitros = new Arbitros
+            {
+                Id = "",
+                Nombre = "",
+                Documento = "",
+                Telefono = "",
+                Colegio = ""
+            };
+            _repoArbitros.AddArbitros(Arbitros);
+        }
+        
+        private static void IndexArbitros()
+        {
+            foreach (var arbitros in _repoArbitros.GetAllArbitros())
+            {
+                Console.WriteLine(Arbitros.Id);
+            }
+        }
+        private static void DeleteArbitros()
+        {
+            _repoArbitros.DeleteArbitros(2);
+        }
     }
 }
