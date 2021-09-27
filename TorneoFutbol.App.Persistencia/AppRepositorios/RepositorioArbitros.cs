@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using TorneoFutbol.App.Dominio;
-
 namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioArbitros : IRepositorioArbitros
@@ -36,13 +35,13 @@ namespace TorneoFutbol.App.Persistencia
         } 
         public Arbitros UpdateArbitros(Arbitros arbitros)
         {
-            var ArbitrosEncontrado = _appContext.Arbitros.Find(idArbitros);
+            var ArbitrosEncontrado = _appContext.Arbitros.Find(arbitros.Id);
             if (ArbitrosEncontrado != null)
             {
-                ArbitrosEncontrado.Nombre=arbitro.Nombre;
-                ArbitrosEncontrado.Documento=arbitro.Documento;
-                ArbitrosEncontrado.Telefono=arbitro.Telefono;
-                ArbitrosEncontrado.Colegio=arbitro.Colegio;
+                ArbitrosEncontrado.Nombre=arbitros.Nombre;
+                ArbitrosEncontrado.Documento=arbitros.Documento;
+                ArbitrosEncontrado.Telefono=arbitros.Telefono;
+                ArbitrosEncontrado.Colegio=arbitros.Colegio;
                 _appContext.SaveChanges();
             }
             return ArbitrosEncontrado;
