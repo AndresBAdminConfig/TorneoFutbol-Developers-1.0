@@ -205,3 +205,8 @@ C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.C
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\TorneoFutbol.App.Consola.dll
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\ref\TorneoFutbol.App.Consola.dll
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\TorneoFutbol.App.Consola.pdb
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\TorneoFutbol.App.Consola.csproj.AssemblyReference.cache
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\TorneoFutbol.App.Consola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\TorneoFutbol.App.Consola.AssemblyInfoInputs.cache
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\TorneoFutbol.App.Consola.AssemblyInfo.cs
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Consola\obj\Debug\net5.0\TorneoFutbol.App.Consola.csproj.CoreCompileInputs.cache

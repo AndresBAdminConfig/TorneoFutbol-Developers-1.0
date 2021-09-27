@@ -10,6 +10,7 @@ namespace TorneoFutbol.App.Consola
         private static IRepositorioJugador _repoJugador = new RepositorioJugador();
         private static IRepositorioMunicipio _repoMunicipio = new RepositorioMunicipio();
         private static IRepositorioGoles _repoGoles = new RepositorioGoles();
+        private static IRepositorioArbitros _repoArbitros = new RepositorioArbitros();
 
         static void Main(string[] args)
         {
@@ -27,14 +28,19 @@ namespace TorneoFutbol.App.Consola
             //DeleteMunicipio();
             //IndexMunicipio();
             AddPartidos();
-            IndexPartidos();
+            IndexPartido();
             DeletePartidos();
             AddDesempeñoEquipos();
             IndexDesempeñoEquipos();
             DeleteDesempeñoEquipos();
+            //Goles
             AddGoles();
             IndexGoles();
             DeleteGoles();
+            //Arbitros
+            AddArbitros();
+            IndexArbitros();
+            DeleteArbitros();
         }
 
         private static void AddEstadio()
@@ -131,9 +137,9 @@ namespace TorneoFutbol.App.Consola
                 EquipoLocal = "",
                 MarcadorInicial = "0-0",
                 EquipoVisitante = "",
-                MarcadorFinal = " - "
+                MarcadorFinal = " - ",
                 Colegio = ""
-            }
+            };
             _repoPartidos.AddPartidos(Partido);
         }
         private static void IndexPartido()
@@ -157,13 +163,13 @@ namespace TorneoFutbol.App.Consola
                 Cantidad_Partidos_Jugados = "5",
                 Cantidad_Partidos_Ganados = "",
                 Cantidad_Partidos_Empatados = "",
-                GF = ""
-                GC = ""
+                GF = "",
+                GC = "",
                 Puntos = ""
-            }
-            _repoDesempeñoEquipos.AddDesempeñoEquipos(DesempeñoEquipos)
+            };
+            _repoDesempeñoEquipos.AddDesempeñoEquipos(DesempeñoEquipos);
         }
-        private static void IndexDesempeñoEquipos
+        private static void IndexDesempeñoEquipos ()
         {
             foreach (var DesempeñoEquipos in _repoDesempeñoEquipos.GetAllDesempeñoEquipos)
             {
