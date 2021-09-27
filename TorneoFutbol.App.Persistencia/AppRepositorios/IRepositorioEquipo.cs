@@ -6,11 +6,11 @@ namespace TorneoFutbol.App.Persistencia
 
     public interface IRepositorioEquipo
     {
-        Equipos AddEquipo(Equipos equipo);
-        IEnumerable<Equipos> GetAllEquipo();
+        equipos AddEquipo(equipos equipo);
+        IEnumerable<equipos> GetAllEquipo();
         void DeleteEquipo(int idEquipo);
-        Equipos GetEquipo(int idEquipo);
-        Equipos UpdateEquipo(Equipos equipo);
+        equipos GetEquipo(int idEquipo);
+        equipos UpdateEquipo(equipos equipo);
 
     }
 
