@@ -7,31 +7,31 @@ namespace TorneoFutbol.App.Persistencia
 
         private readonly AppContext _appContext = new AppContext();   
         
-        Equipos IRepositorioEquipo.AddEquipos(Equipos equipos)
+        equipos IRepositorioEquipo.AddEquipo(equipos equipo)
         {
-            var equipoAdicionado = _appContext.Equipo.Add(equipos);
+            var equipoAdicionado = _appContext.equipo.Add(equipo);
             _appContext.SaveChanges();
             return equipoAdicionado.Entity;
         }
-        IEnumerable<Equipos> IRepositorioEquipo.GetAllEquipo()
+        IEnumerable<equipos> IRepositorioEquipo.GetAllEquipo()
         {
-            return _appContext.Equipo;
+            return _appContext.equipo;
         }
         public void DeleteEquipo(int idEquipo)
         {
-            var EquipoEncontrado = _appContext.Equipo.Find(idEquipo);
+            var EquipoEncontrado = _appContext.equipo.Find(idEquipo);
             if (EquipoEncontrado == null)
                 return;
-            _appContext.Equipo.Remove(EquipoEncontrado);
+            _appContext.equipo.Remove(EquipoEncontrado);
             _appContext.SaveChanges();
         }
-        public Equipos GetEquipos(int idEquipo)
+        public equipos GetEquipo(int idEquipo)
         {
-            return _appContext.Equipo.Find(idEquipo);
+            return _appContext.equipo.Find(idEquipo);
         }  
-        public Equipos UpdateEquipo (Equipos equipos)
+        public equipos UpdateEquipo (equipos equipos)
         {
-            var EquipoEncontrado = _appContext.Equipo.Find(equipos.Id);
+            var EquipoEncontrado = _appContext.equipo.Find(equipos.Id);
             if (EquipoEncontrado != null)
             {
                 EquipoEncontrado.Nombre = equipos.Nombre;
