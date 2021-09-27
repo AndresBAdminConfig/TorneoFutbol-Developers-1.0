@@ -185,9 +185,7 @@ namespace TorneoFutbol.App.Consola
         {
             var Goles = new Goles
             {
-                Id = "",
-                MinutoGol = "",
-                IdJugador = ""
+                
             };
             _repoGoles.AddGoles(Goles);
         }
@@ -208,7 +206,6 @@ namespace TorneoFutbol.App.Consola
         {
             var Arbitros = new Arbitros
             {
-                Id = "",
                 Nombre = "",
                 Documento = "",
                 Telefono = "",
