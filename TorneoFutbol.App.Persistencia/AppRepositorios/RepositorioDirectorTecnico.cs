@@ -13,29 +13,29 @@ namespace TorneoFutbol.App.Persistencia
 
         DirectorTecnico IRepositorioDirectorTecnico.AddDirectorTecnico(DirectorTecnico directortecnico)
         {
-            var directortecnicoAdicionado = _appContext.DirectorTecnico.Add(directortecnico);
+            var directortecnicoAdicionado = _appContext.DirectoresTecnicos.Add(directortecnico);
             _appContext.SaveChanges();
             return directortecnicoAdicionado.Entity;
         }
         IEnumerable<DirectorTecnico> IRepositorioDirectorTecnico.GetAllDirectorTecnico()
         {
-            return _appContext.DirectorTecnico;
+            return _appContext.DirectoresTecnicos;
         }
         public void DeleteDirectorTecnico(int idDirectorTecnico)
         {
-            var directortecnicoEncontrado = _appContext.DirectorTecnico.Find(idDirectorTecnico);
+            var directortecnicoEncontrado = _appContext.DirectoresTecnicos.Find(idDirectorTecnico);
             if (directortecnicoEncontrado == null)
                 return;
-            _appContext.Estadios.Remove(directortecnicoEncontrado);
+            _appContext.DirectoresTecnicos.Remove(directortecnicoEncontrado);
             _appContext.SaveChanges();
         }
         public DirectorTecnico GetDirectorTecnico(int idDirectorTecnico)
         {
-            return _appContext.DirectorTecnico.Find(idDirectorTecnico);
+            return _appContext.DirectoresTecnicos.Find(idDirectorTecnico);
         }  
-        public DirectorTecnico UpdateEstadio(DirectorTecnico directortecnico)
+        public DirectorTecnico UpdateDirectorTecnico(DirectorTecnico directortecnico)
         {
-            var directortecnicoEncontrado = _appContext.DirectorTecnico.Find(directortecnico.Id);
+            var directortecnicoEncontrado = _appContext.DirectoresTecnicos.Find(directortecnico.Id);
             if (directortecnicoEncontrado != null)
             {
                 directortecnicoEncontrado.Nombre = directortecnico.Nombre;

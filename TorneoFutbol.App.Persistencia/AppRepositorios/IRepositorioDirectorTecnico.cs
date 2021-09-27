@@ -6,7 +6,7 @@ namespace TorneoFutbol.App.Persistencia
 
     public interface IRepositorioDirectorTecnico
     {
-        DirectorTecnico AddEstadio(DirectorTecnico directortecnico);
+        DirectorTecnico AddDirectorTecnico(DirectorTecnico directortecnico);
         IEnumerable<DirectorTecnico> GetAllDirectorTecnico();
         void DeleteDirectorTecnico(int idDirectorTecnico);
         DirectorTecnico GetDirectorTecnico(int idDirectorTecnico);
