@@ -6,12 +6,8 @@ namespace TorneoFutbol.App.Persistencia
     public class RepositorioGoles : IRepositorioGoles
     {
         
-        private readonly AppContext _appContext;
-        public RepositorioGoles(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
-
+        private readonly AppContext _appContext = new AppContext();
+        
         Goles IRepositorioGoles.AddGoles(Goles goles)
         {
             var golesAdicionado = _appContext.Gol.Add(goles);
@@ -40,7 +36,7 @@ namespace TorneoFutbol.App.Persistencia
             if (GolesEncontrado != null)
             {
                 GolesEncontrado.MinutoGol=goles.MinutoGol;
-                GolesEncontrado.Jugadores=goles.Jugadores;
+                
                 
                 _appContext.SaveChanges();
             }

@@ -5,7 +5,8 @@ namespace TorneoFutbol.App.Dominio
     {
         // Identificador único de cada persona
         public int  Id { get; set; }
-        public DateTime MinutoGol { get; set; }
+        public String MinutoGol { get; set; }
+        //Relacion Goles con Jugador
         public Jugadores Jugadores{get; set;}
         
 

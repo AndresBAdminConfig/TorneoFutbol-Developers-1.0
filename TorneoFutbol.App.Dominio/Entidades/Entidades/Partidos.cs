@@ -5,11 +5,11 @@ namespace TorneoFutbol.App.Dominio
     {
         // Identificador único de cada persona
         public int  Id  { get; set; }
-        public DateTime FechaHora { get; set; }
+        public String FechaHora { get; set; }
         public string EquipoLocal { get; set; }
-        public int MarcadorInicial { get; set; }
+        public String MarcadorInicial { get; set; }
         public String EquipoVisitante { get; set; }
-        public int MarcadorFinal { get; set; }
+        public string MarcadorFinal { get; set; }
         public string Colegio { get; set; }
         //Relacion Partido y Equipos
         public System.Collections.Generic.List<equipos> equipos { get; set; }
