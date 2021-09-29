@@ -11,6 +11,10 @@ namespace TorneoFutbol.App.Consola
         private static IRepositorioMunicipio _repoMunicipio = new RepositorioMunicipio();
         private static IRepositorioGoles _repoGoles = new RepositorioGoles();
         private static IRepositorioArbitros _repoArbitros = new RepositorioArbitros();
+        private static IRepositorioPartidos _repoPartidos = new RepositorioPartidos();
+        private static IRepositorioDesempeñoEquipos _repoDesempeñoEquipos = new RepositorioDesempeñoEquipos();
+        private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico();
+
 
         static void Main(string[] args)
         {
@@ -24,23 +28,23 @@ namespace TorneoFutbol.App.Consola
             //AddJugadores();
             //DeleteJugador();
             //IndexJugador();
-            AddMunicipio();
+            //AddMunicipio();
             //DeleteMunicipio();
             //IndexMunicipio();
-            AddPartidos();
-            IndexPartido();
-            DeletePartidos();
-            AddDesempeñoEquipos();
-            IndexDesempeñoEquipos();
-            DeleteDesempeñoEquipos();
+            //AddPartidos();
+            //IndexPartido();
+            //DeletePartidos();
+            //AddDesempeñoEquipos();
+            //IndexDesempeñoEquipos();
+            //DeleteDesempeñoEquipos();
             //Goles
-            AddGoles();
-            IndexGoles();
-            DeleteGoles();
+            //AddGoles();
+            //IndexGoles();
+            //DeleteGoles();
             //Arbitros
-            AddArbitros();
-            IndexArbitros();
-            DeleteArbitros();
+            //AddArbitros();
+            //IndexArbitros();
+            //DeleteArbitros();
         }
 
         private static void AddEstadio()
@@ -132,13 +136,12 @@ namespace TorneoFutbol.App.Consola
         {
             var Partido = new Partidos 
             {
-                Id = "",
-                FechaHora = "",
-                EquipoLocal = "",
+                FechaHora = "29/09/2021 17:20",
+                EquipoLocal = "equipo uno",
                 MarcadorInicial = "0-0",
-                EquipoVisitante = "",
-                MarcadorFinal = " - ",
-                Colegio = ""
+                EquipoVisitante = "equipo2",
+                MarcadorFinal = " 1-1 ",
+                Colegio = "Normal Superior"
             };
             _repoPartidos.AddPartidos(Partido);
         }
@@ -158,14 +161,12 @@ namespace TorneoFutbol.App.Consola
         {
             var DesempeñoEquipos = new DesempeñoEquipos 
             {
-                Id = "",
-                FechaHora = "",
-                Cantidad_Partidos_Jugados = "5",
-                Cantidad_Partidos_Ganados = "",
-                Cantidad_Partidos_Empatados = "",
-                GF = "",
-                GC = "",
-                Puntos = ""
+                Cantidad_Partidos_Jugados = 5,
+                Cantidad_Partidos_Ganados = 2,
+                Cantidad_Partidos_Empatados = 1,
+                GF = 3,
+                GC = 1,
+                Puntos = 10
             };
             _repoDesempeñoEquipos.AddDesempeñoEquipos(DesempeñoEquipos);
         }
@@ -185,7 +186,7 @@ namespace TorneoFutbol.App.Consola
         {
             var Goles = new Goles
             {
-                
+                MinutoGol = "20:06"
             };
             _repoGoles.AddGoles(Goles);
         }
@@ -206,10 +207,10 @@ namespace TorneoFutbol.App.Consola
         {
             var Arbitros = new Arbitros
             {
-                Nombre = "",
-                Documento = "",
-                Telefono = "",
-                Colegio = ""
+                Nombre = "Juanito",
+                Documento = "17990",
+                Telefono = "302202",
+                Colegio = "Normal Superior"
             };
             _repoArbitros.AddArbitros(Arbitros);
         }
@@ -218,7 +219,7 @@ namespace TorneoFutbol.App.Consola
         {
             foreach (var arbitros in _repoArbitros.GetAllArbitros())
             {
-                Console.WriteLine(Arbitros.Id);
+                Console.WriteLine(Arbitros.nombre + " " + Arbitros.Documento + " " + Arbitros.Telefono + " " + Arbitros.Colegio);
             }
         }
         private static void DeleteArbitros()
