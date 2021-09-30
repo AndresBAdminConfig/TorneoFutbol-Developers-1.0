@@ -12,8 +12,8 @@ namespace TorneoFutbol.App.Consola
         private static IRepositorioGoles _repoGoles = new RepositorioGoles();
         private static IRepositorioArbitros _repoArbitros = new RepositorioArbitros();
         private static IRepositorioPartidos _repoPartidos = new RepositorioPartidos();
-        private static IRepositorioDesempeñoEquipos _repoDesempeñoEquipos = new RepositorioDesempeñoEquipos();
         private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico();
+        private static IRepositorioDesempeñoEquipo _repoDesempeñoEquipo = new RepositorioDesempeñoEquipo();
 
 
         static void Main(string[] args)
@@ -157,30 +157,7 @@ namespace TorneoFutbol.App.Consola
         {
             _repoPartidos.DeletePartidos(2); 
         }
-        private static void AddDesempeñoEquipos()
-        {
-            var DesempeñoEquipos = new DesempeñoEquipos 
-            {
-                Cantidad_Partidos_Jugados = 5,
-                Cantidad_Partidos_Ganados = 2,
-                Cantidad_Partidos_Empatados = 1,
-                GF = 3,
-                GC = 1,
-                Puntos = 10
-            };
-            _repoDesempeñoEquipos.AddDesempeñoEquipos(DesempeñoEquipos);
-        }
-        private static void IndexDesempeñoEquipos ()
-        {
-            foreach (var DesempeñoEquipos in _repoDesempeñoEquipos.GetAllDesempeñoEquipos)
-            {
-                Console.WriteLine(DesempeñoEquipos.Id);
-            }
-        }
-        private static void DeleteDesempeñoEquipos()
-        {
-            _repoDesempeñoEquipos.DeleteDesempeñoEquipos(2); 
-        }
+        
         //Program Goles
         private static void AddGoles()
         {
@@ -195,7 +172,7 @@ namespace TorneoFutbol.App.Consola
         {
             foreach (var goles in _repoGoles.GetAllGoles())
             {
-                Console.WriteLine(Goles.Id);
+                Console.WriteLine(Goles.MinutoGol);
             }
         }
         private static void DeleteGoles()
@@ -205,26 +182,52 @@ namespace TorneoFutbol.App.Consola
         //Program Arbitros
         private static void AddArbitros()
         {
-            var Arbitros = new Arbitros
+            var Arbitro = new Arbitros
             {
                 Nombre = "Juanito",
                 Documento = "17990",
                 Telefono = "302202",
                 Colegio = "Normal Superior"
             };
-            _repoArbitros.AddArbitros(Arbitros);
+            _repoArbitros.AddArbitros(Arbitro);
         }
         
         private static void IndexArbitros()
         {
-            foreach (var arbitros in _repoArbitros.GetAllArbitros())
+            foreach (var Arbitros in _repoArbitros.GetAllArbitros())
             {
-                Console.WriteLine(Arbitros.nombre + " " + Arbitros.Documento + " " + Arbitros.Telefono + " " + Arbitros.Colegio);
+                Console.WriteLine(Arbitros.Nombre + " " + Arbitros.Documento + " " + Arbitros.Telefono + " " + Arbitros.Colegio);
             }
         }
         private static void DeleteArbitros()
         {
             _repoArbitros.DeleteArbitros(2);
+        }
+
+        private static void AddDesempeñoEquipos()
+        {
+            var desempeñoequipos = new DesempeñoEquipo
+            {
+                Cantidad_Partidos_Jugados = 5,
+                Cantidad_Partidos_Ganados = 2,
+                Cantidad_Partidos_Empatados = 1,
+                GF = 5,
+                GC = 2,
+                Puntos = 10,
+                
+            };
+            _repoDesempeñoEquipo.AddDesempeñoEquipos(desempeñoequipos);
+        }
+        private static void IndexDesempeñoEquipos()
+        {
+            foreach (var desempeñoequipos in _repoDesempeñoEquipo.GetAllDesempeñoEquipo())
+            {
+                Console.WriteLine(desempeñoequipos.Cantidad_Partidos_Ganados + " " + desempeñoequipos.Cantidad_Partidos_Jugados +" " + desempeñoequipos.Cantidad_Partidos_Empatados + " " + desempeñoequipos.GF + " " + desempeñoequipos.GC + " " + desempeñoequipos.Puntos );
+            }
+        }
+        private static void DeleteDesempeñoEquipos()
+        {
+            _repoDesempeñoEquipo.DeleteDesempeñoEquipos(2);
         }
     }
 }
