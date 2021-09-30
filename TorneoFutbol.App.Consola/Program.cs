@@ -158,6 +158,30 @@ namespace TorneoFutbol.App.Consola
             _repoPartidos.DeletePartidos(2); 
         }
         
+        private static void AddDesempeñoEquipos()
+        {
+            var DesempeñoEquipos = new DesempeñoEquipos 
+            {
+                Cantidad_Partidos_Jugados = 5,
+                Cantidad_Partidos_Ganados = 2,
+                Cantidad_Partidos_Empatados = 1,
+                GF = 3,
+                GC = 1,
+                Puntos = 10
+            };
+            _repoDesempeñoEquipos.AddDesempeñoEquipos(DesempeñoEquipos);
+        }
+        private static void IndexDesempeñoEquipos ()
+        {
+            foreach (var DesempeñoEquipos in _repoDesempeñoEquipos.GetAllDesempeñoEquipos())
+            {
+                Console.WriteLine(DesempeñoEquipos.Id);
+            }
+        }
+        private static void DeleteDesempeñoEquipos()
+        {
+            _repoDesempeñoEquipos.DeleteDesempeñoEquipos(2); 
+        }
         //Program Goles
         private static void AddGoles()
         {
