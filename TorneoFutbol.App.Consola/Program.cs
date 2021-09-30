@@ -160,7 +160,7 @@ namespace TorneoFutbol.App.Consola
         
         private static void AddDesempeñoEquipos()
         {
-            var DesempeñoEquipos = new DesempeñoEquipos 
+            var DesempeñoEquipos = new DesempeñoEquipo
             {
                 Cantidad_Partidos_Jugados = 5,
                 Cantidad_Partidos_Ganados = 2,
@@ -169,18 +169,18 @@ namespace TorneoFutbol.App.Consola
                 GC = 1,
                 Puntos = 10
             };
-            _repoDesempeñoEquipos.AddDesempeñoEquipos(DesempeñoEquipos);
+            _repoDesempeñoEquipo.AddDesempeñoEquipos(DesempeñoEquipos);
         }
         private static void IndexDesempeñoEquipos ()
         {
-            foreach (var DesempeñoEquipos in _repoDesempeñoEquipos.GetAllDesempeñoEquipos())
+            foreach (var DesempeñoEquipos in _repoDesempeñoEquipo.GetAllDesempeñoEquipo())
             {
                 Console.WriteLine(DesempeñoEquipos.Id);
             }
         }
         private static void DeleteDesempeñoEquipos()
         {
-            _repoDesempeñoEquipos.DeleteDesempeñoEquipos(2); 
+            _repoDesempeñoEquipo.DeleteDesempeñoEquipos(2); 
         }
         //Program Goles
         private static void AddGoles()
@@ -196,7 +196,7 @@ namespace TorneoFutbol.App.Consola
         {
             foreach (var goles in _repoGoles.GetAllGoles())
             {
-                Console.WriteLine(Goles.MinutoGol);
+                Console.WriteLine(goles.MinutoGol);
             }
         }
         private static void DeleteGoles()
@@ -228,30 +228,6 @@ namespace TorneoFutbol.App.Consola
             _repoArbitros.DeleteArbitros(2);
         }
 
-        private static void AddDesempeñoEquipos()
-        {
-            var desempeñoequipos = new DesempeñoEquipo
-            {
-                Cantidad_Partidos_Jugados = 5,
-                Cantidad_Partidos_Ganados = 2,
-                Cantidad_Partidos_Empatados = 1,
-                GF = 5,
-                GC = 2,
-                Puntos = 10,
-                
-            };
-            _repoDesempeñoEquipo.AddDesempeñoEquipos(desempeñoequipos);
-        }
-        private static void IndexDesempeñoEquipos()
-        {
-            foreach (var desempeñoequipos in _repoDesempeñoEquipo.GetAllDesempeñoEquipo())
-            {
-                Console.WriteLine(desempeñoequipos.Cantidad_Partidos_Ganados + " " + desempeñoequipos.Cantidad_Partidos_Jugados +" " + desempeñoequipos.Cantidad_Partidos_Empatados + " " + desempeñoequipos.GF + " " + desempeñoequipos.GC + " " + desempeñoequipos.Puntos );
-            }
-        }
-        private static void DeleteDesempeñoEquipos()
-        {
-            _repoDesempeñoEquipo.DeleteDesempeñoEquipos(2);
-        }
+        
     }
 }
