@@ -172,7 +172,7 @@ namespace TorneoFutbol.App.Consola
         }
         private static void IndexDesempeñoEquipos ()
         {
-            foreach (var DesempeñoEquipos in _repoDesempeñoEquipos.GetAllDesempeñoEquipos)
+            foreach (var DesempeñoEquipos in _repoDesempeñoEquipos.GetAllDesempeñoEquipos())
             {
                 Console.WriteLine(DesempeñoEquipos.Id);
             }
