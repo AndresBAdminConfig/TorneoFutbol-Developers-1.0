@@ -5,11 +5,8 @@ namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioPartidos : IRepositorioPartidos
     {
-        private readonly AppContext _appContext;
-        public RepositorioPartidos(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();
+        
 
         Partidos AddPartidos(Partidos Partido)
         {

@@ -1,3 +1,4 @@
+
 namespace TorneoFutbol.App.Dominio
 {
     public class equipos
@@ -10,7 +11,7 @@ namespace TorneoFutbol.App.Dominio
         //Relacion Equipo y Municipio
         public Municipio Municipio {get; set;}
         //Relacion Equipo y desempeño equipo
-        public DesempeñoEquipos DesempeñoEquipos {get; set;}
+        public DesempeñoEquipo desempeñoequipo {get; set;}
 
     }
 }

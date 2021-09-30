@@ -1,7 +1,6 @@
-using System;
 namespace TorneoFutbol.App.Dominio
 {
-    public class DesempeñoEquipos
+    public class DesempeñoEquipo
     {
         // Identificador único de cada persona
         public int  Id  { get; set; }
