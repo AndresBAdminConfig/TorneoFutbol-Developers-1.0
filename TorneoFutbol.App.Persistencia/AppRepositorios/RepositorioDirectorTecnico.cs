@@ -5,11 +5,8 @@ namespace TorneoFutbol.App.Persistencia
     public class RepositorioDirectorTecnico : IRepositorioDirectorTecnico
     {
 
-        private readonly AppContext _appContext;   
-        public RepositorioDirectorTecnico(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();   
+        
 
         DirectorTecnico IRepositorioDirectorTecnico.AddDirectorTecnico(DirectorTecnico directortecnico)
         {

@@ -8,7 +8,7 @@ namespace TorneoFutbol.App.Persistencia
         public DbSet<Arbitros> Arbitro{get; set;}
         public DbSet<DesempeñoEquipo> DesempeñoEquipos {get; set;}
         public DbSet<DirectorTecnico> DirectoresTecnicos {get; set;}
-        public DbSet<equipos> equipo {get; set;}
+        public DbSet<Equipo> Equipos {get; set;}
         public DbSet<Estadio> Estadios{get; set;}
         public DbSet<Goles> Gol{get; set;}
         public DbSet<Municipio> Municipios{get; set;}
