@@ -40,7 +40,6 @@ namespace TorneoFutbol.App.Persistencia
                 reporteEncontrado.MarcadorFinal = reporte.MarcadorFinal;
                 reporteEncontrado.TarjetasAmarillas = reporte.TarjetasAmarillas;
                 reporteEncontrado.TarjetasRojas = reporte.TarjetasRojas;
-                reporteEncontrado.IdPartido = reporte.IdPartido; 
                 _appContext.SaveChanges();
             }
             return reporteEncontrado;

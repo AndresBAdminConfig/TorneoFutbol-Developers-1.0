@@ -7,4 +7,8 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = TorneoFutbol.App.Persistencia
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\
+=======
+build_property.ProjectDir = C:\Users\Felipe\Desktop\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Persistencia\
+>>>>>>> e9639b47c501653d31efffcd2918799a91859f7f

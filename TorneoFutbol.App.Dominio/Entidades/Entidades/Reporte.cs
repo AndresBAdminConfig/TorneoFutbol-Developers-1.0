@@ -9,7 +9,8 @@ namespace TorneoFutbol.App.Dominio
         public string TarjetasRojas { get; set; }
         //Relacion Reporte y Goles
         public Goles Goles {get; set;}
-        public Partidos Partidos {get; set;}
+        //Relacion Reporte y Partido
+        public Partidos  Partidos { get; set; }
 
     }
 }

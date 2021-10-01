@@ -12,7 +12,7 @@ namespace TorneoFutbol.App.Consola
         private static IRepositorioGoles _repoGoles = new RepositorioGoles();
         private static IRepositorioArbitros _repoArbitros = new RepositorioArbitros();
         private static IRepositorioPartidos _repoPartidos = new RepositorioPartidos();
-        private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico();
+        private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico(new Persistencia.AppContext());
         private static IRepositorioDesempeñoEquipo _repoDesempeñoEquipo = new RepositorioDesempeñoEquipo();
 
 
@@ -45,6 +45,10 @@ namespace TorneoFutbol.App.Consola
             //AddArbitros();
             //IndexArbitros();
             //DeleteArbitros();
+            //DirectorTecnico
+            //AddDirectorTecnico();
+            //IndexDirectorTecnico();
+            //DeleteDirectorTecnico();
         }
 
         private static void AddEstadio()
@@ -71,8 +75,8 @@ namespace TorneoFutbol.App.Consola
         {
             var reporte = new Reporte
             {
-                MarcadorFinal = "0 - 2",
-                TarjetasAmarillas = "2",
+                MarcadorFinal = "1 - 1",
+                TarjetasAmarillas = "0",
                 TarjetasRojas = "0"
             };
             _repoReporte.AddReporte(reporte);
@@ -87,7 +91,7 @@ namespace TorneoFutbol.App.Consola
         }
         private static void DeleteReporte()
         {
-            _repoReporte.DeleteReporte(3);
+            _repoReporte.DeleteReporte();
         }
 
 
@@ -227,7 +231,28 @@ namespace TorneoFutbol.App.Consola
         {
             _repoArbitros.DeleteArbitros(2);
         }
-
+        //Director Técnico
+        private static void AddDirectorTecnico()
+        {
+            var DirectorTecnico = new DirectorTecnico
+            {
+                Nombre = "Juanito",
+                Documento = "17990",
+                Telefono = "302202"
+            };
+            _repoDirectorTecnico.AddDirectorTecnico(DirectorTecnico);
+        }
         
+        private static void IndexDirectorTecnico()
+        {
+            foreach (var DirectorTecnico in _repoDirectorTecnico.GetAllDirectorTecnico())
+            {
+                Console.WriteLine(DirectorTecnico.Nombre + " " + DirectorTecnico.Documento + " " + DirectorTecnico.Telefono);
+            }
+        }
+        private static void DeleteDirectorTecnico()
+        {
+            _repoDirectorTecnico.DeleteDirectorTecnico(2);
+        }
     }
 }
