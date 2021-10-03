@@ -12,7 +12,7 @@ namespace TorneoFutbol.App.Consola
         private static IRepositorioGoles _repoGoles = new RepositorioGoles();
         private static IRepositorioArbitros _repoArbitros = new RepositorioArbitros();
         private static IRepositorioPartidos _repoPartidos = new RepositorioPartidos();
-        private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico(new Persistencia.AppContext());
+        private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico();
         private static IRepositorioDesempeñoEquipo _repoDesempeñoEquipo = new RepositorioDesempeñoEquipo();
 
 
