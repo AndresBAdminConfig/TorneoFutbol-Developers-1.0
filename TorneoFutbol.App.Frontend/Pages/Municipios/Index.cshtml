@@ -1,0 +1,23 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.Municipios.IndexModel
+@{
+}
+<h1>Listado de Municipios</h1>
+<table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        </tbody>
+            @foreach (var municipio in Model.municipios)
+            {
+                <tr>
+                    <td>@municipio.Nombre</td>
+                    <td><a class="btn btn-success" asp-page="./Details" asp-route-id="@municipio.Id">Detalle</a></td>
+                </tr>
+            }
+        </tbody>
+</table>
+

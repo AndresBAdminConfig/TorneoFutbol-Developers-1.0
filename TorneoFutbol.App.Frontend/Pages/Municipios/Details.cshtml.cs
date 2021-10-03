@@ -7,20 +7,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TorneoFutbol.App.Dominio;
 using TorneoFutbol.App.Persistencia;
 
-namespace TorneoFutbol.App.Frontend.Jugadores
+namespace TorneoFutbol.App.Frontend.Municipios
 {
     public class DetailsModel : PageModel
     {
-        private readonly IRepositorioJugador _repoJugador;
-        public Jugador jugador {get; set;}
-        public DetailsModel(IRepositorioJugador repoJugador)
+        private readonly IRepositorioMunicipio _repoMunicipio;
+        public Municipio municipio {get; set;}
+        public DetailsModel(IRepositorioMunicipio repoMunicipio)
         {
-            _repoJugador = repoJugador;
+            _repoMunicipio = repoMunicipio;
         }
         public IActionResult OnGet(int id)
         {
-            jugador = _repoJugador.GetJugador(id);
-            if (jugador == null)
+            municipio = _repoMunicipio.GetMunicipio(id);
+            if (municipio == null)
             {
                 return NotFound();
             }
@@ -29,5 +29,6 @@ namespace TorneoFutbol.App.Frontend.Jugadores
                 return Page();
             }
         }
+        
     }
 }
