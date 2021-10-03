@@ -38,3 +38,5 @@ C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App\Tor
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\TorneoFutbol.App.Frontend.pdb
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\TorneoFutbol.App.Frontend.genruntimeconfig.cache
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\TorneoFutbol.App.Frontend.csproj.CopyComplete
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Details.cshtml.g.cs
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Index.cshtml.g.cs
