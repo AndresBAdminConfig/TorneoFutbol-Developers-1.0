@@ -1,43 +1,44 @@
-using System.Collections.Generic;
-using TorneoFutbol.App.Dominio;
-namespace TorneoFutbol.App.Persistencia
-{
-    public class RepositorioEquipo : IRepositorioEquipo
-    {
+//using System.Collections.Generic;
+//using TorneoFutbol.App.Dominio;
+//namespace TorneoFutbol.App.Persistencia
+//{
+  //  public class RepositorioEquipo : IRepositorioEquipo
+    //{
 
-        private readonly AppContext _appContext = new AppContext();   
+      //  private readonly AppContext _appContext = new AppContext();   
         
-        equipos IRepositorioEquipo.AddEquipo(equipos equipo)
-        {
-            var equipoAdicionado = _appContext.equipo.Add(equipo);
-            _appContext.SaveChanges();
-            return equipoAdicionado.Entity;
-        }
-        IEnumerable<equipos> IRepositorioEquipo.GetAllEquipo()
-        {
-            return _appContext.equipo;
-        }
-        public void DeleteEquipo(int idEquipo)
-        {
-            var EquipoEncontrado = _appContext.equipo.Find(idEquipo);
-            if (EquipoEncontrado == null)
-                return;
-            _appContext.equipo.Remove(EquipoEncontrado);
-            _appContext.SaveChanges();
-        }
-        public equipos GetEquipo(int idEquipo)
-        {
-            return _appContext.equipo.Find(idEquipo);
-        }  
-        public equipos UpdateEquipo (equipos equipos)
-        {
-            var EquipoEncontrado = _appContext.equipo.Find(equipos.Id);
-            if (EquipoEncontrado != null)
-            {
-                EquipoEncontrado.Nombre = equipos.Nombre;
-                _appContext.SaveChanges();
-            }
-            return EquipoEncontrado;
-        } 
-    }
-}
+        
+        //Equipo IRepositorioEquipo.AddEquipo(Equipo Equipos)
+        //{
+          //  var equipoAdicionado = _appContext.equipo.Add(Equipos);
+            //_appContext.SaveChanges();
+            //return equipoAdicionado.Entity;
+        //}
+        //IEnumerable<Equipo> IRepositorioEquipo.GetAllEquipo()
+        //{
+          //  return _appContext.Equipos;
+        //}
+        //public void DeleteEquipo(int idEquipo)
+        //{
+          //  var EquipoEncontrado = _appContext.Equipos.Find(idEquipo);
+            //if (EquipoEncontrado == null)
+              //  return;
+            //_appContext.Equipos.Remove(EquipoEncontrado);
+            //_appContext.SaveChanges();
+        //}
+        //public Equipo GetEquipo(int idEquipo)
+        //{
+          //  return _appContext.Equipos.Find(idEquipo);
+        //}  
+        //public Equipo UpdateEquipo (Equipo Equipos)
+        //{
+          //  var EquipoEncontrado = _appContext.Equipos.Find(Equipos.Id);
+            //if (EquipoEncontrado != null)
+            //{
+              //  EquipoEncontrado.Nombre = Equipos.Nombre;
+                //_appContext.SaveChanges();
+            //}
+            //return EquipoEncontrado;
+        //} 
+    //}
+//}

@@ -6,9 +6,9 @@ namespace TorneoFutbol.App.Dominio
         public int  Id  { get; set; }
         public string Nombre { get; set; }
         //Relacion Municipio y Equipos
-        public System.Collections.Generic.List<equipos> equipos { get; set; }
+        public System.Collections.Generic.List<Equipo> Equipos { get; set; }
         //Relacion Municipios y Estadios
-        public System.Collections.Generic.List<Estadio> Estadio { get; set; }
+        public System.Collections.Generic.List<Estadio> Estadios { get; set; }
 
     }
 }

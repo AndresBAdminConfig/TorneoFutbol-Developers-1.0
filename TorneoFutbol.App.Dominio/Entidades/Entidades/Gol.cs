@@ -1,13 +1,13 @@
 using System;
 namespace TorneoFutbol.App.Dominio
 {
-    public class Goles
+    public class Gol
     {
         // Identificador único de cada persona
         public int  Id { get; set; }
         public String MinutoGol { get; set; }
         //Relacion Goles con Jugador
-        public Jugadores Jugadores{get; set;}
+        public Jugador Jugadores{get; set;}
         
 
     }

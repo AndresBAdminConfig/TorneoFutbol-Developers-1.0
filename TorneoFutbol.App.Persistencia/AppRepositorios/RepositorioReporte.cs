@@ -4,15 +4,11 @@ namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioReporte : IRepositorioReporte
     {
-        private readonly AppContext _appContext;   
-        public RepositorioReporte(AppContext appContext)
+        private readonly AppContext _appContext = new AppContext();   
+        
+        Reporte IRepositorioReporte.AddReporte(Reporte reportes)
         {
-            _appContext = appContext;
-        }
-
-        Reporte IRepositorioReporte.AddReporte(Reporte reporte)
-        {
-            var reporteAdicionado = _appContext.Reportes.Add(reporte);
+            var reporteAdicionado = _appContext.Reportes.Add(reportes);
             _appContext.SaveChanges();
             return reporteAdicionado.Entity;
         }
@@ -32,14 +28,14 @@ namespace TorneoFutbol.App.Persistencia
         {
             return _appContext.Reportes.Find(idReporte);
         } 
-        public Reporte UpdateReporte(Reporte reporte)
+        public Reporte UpdateReporte(Reporte reportes)
         {
-            var reporteEncontrado = _appContext.Reportes.Find(reporte.Id);
+            var reporteEncontrado = _appContext.Reportes.Find(reportes.Id);
             if (reporteEncontrado != null)
             {
-                reporteEncontrado.MarcadorFinal = reporte.MarcadorFinal;
-                reporteEncontrado.TarjetasAmarillas = reporte.TarjetasAmarillas;
-                reporteEncontrado.TarjetasRojas = reporte.TarjetasRojas;
+                reporteEncontrado.MarcadorFinal = reportes.MarcadorFinal;
+                reporteEncontrado.TarjetasAmarillas = reportes.TarjetasAmarillas;
+                reporteEncontrado.TarjetasRojas = reportes.TarjetasRojas;
                 _appContext.SaveChanges();
             }
             return reporteEncontrado;

@@ -5,14 +5,14 @@ namespace TorneoFutbol.App.Consola
 {
     class Program
     {
-        private static IRepositorioEstadios _repoEstadio =  new RepositorioEstadios(new Persistencia.AppContext());                
-        private static IRepositorioReporte _repoReporte =  new RepositorioReporte(new Persistencia.AppContext());
+        private static IRepositorioEstadio _repoEstadio =  new RepositorioEstadio();                
+        private static IRepositorioReporte _repoReporte =  new RepositorioReporte();
         private static IRepositorioJugador _repoJugador = new RepositorioJugador();
         private static IRepositorioMunicipio _repoMunicipio = new RepositorioMunicipio();
-        private static IRepositorioGoles _repoGoles = new RepositorioGoles();
-        private static IRepositorioArbitros _repoArbitros = new RepositorioArbitros();
-        private static IRepositorioPartidos _repoPartidos = new RepositorioPartidos();
-        private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico(new Persistencia.AppContext());
+        private static IRepositorioGol _repoGoles = new RepositorioGol();
+        private static IRepositorioArbitro _repoArbitros = new RepositorioArbitro();
+        private static IRepositorioPartido _repoPartidos = new RepositorioPartido();
+        private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico();
         private static IRepositorioDesempeñoEquipo _repoDesempeñoEquipo = new RepositorioDesempeñoEquipo();
 
 
@@ -73,31 +73,31 @@ namespace TorneoFutbol.App.Consola
         }
         private static void AddReporte()
         {
-            var reporte = new Reporte
+            var Reportes = new Reporte
             {
                 MarcadorFinal = "1 - 1",
                 TarjetasAmarillas = "0",
                 TarjetasRojas = "0"
             };
-            _repoReporte.AddReporte(reporte);
+            _repoReporte.AddReporte(Reportes);
         } 
 
         private static void IndexReportes()
         {
-            foreach (var reportes in _repoReporte.GetAllReportes())
+            foreach (var Reportes in _repoReporte.GetAllReportes())
             {
-                Console.WriteLine(reportes.MarcadorFinal + " " +"Tarjetas amarillas:"+ reportes.TarjetasAmarillas+" "+"Tarejtas Rojas"+reportes.TarjetasRojas );
+                Console.WriteLine(Reportes.MarcadorFinal + " " +"Tarjetas amarillas:"+ Reportes.TarjetasAmarillas+" "+"Tarejtas Rojas"+Reportes.TarjetasRojas );
             }
         }
         private static void DeleteReporte()
         {
-            _repoReporte.DeleteReporte();
+            _repoReporte.DeleteReporte(2);
         }
 
 
         private static void AddJugadores()
         {
-            var jugadores = new Jugadores
+            var jugadores = new Jugador
             {
                 Nombre = "Pepito",
                 Numero = "09",
@@ -138,7 +138,7 @@ namespace TorneoFutbol.App.Consola
         }
         private static void AddPartidos()
         {
-            var Partido = new Partidos 
+            var Partido = new Partido 
             {
                 FechaHora = "29/09/2021 17:20",
                 EquipoLocal = "equipo uno",
@@ -189,11 +189,11 @@ namespace TorneoFutbol.App.Consola
         //Program Goles
         private static void AddGoles()
         {
-            var Goles = new Goles
+            var goles = new Gol
             {
                 MinutoGol = "20:06"
             };
-            _repoGoles.AddGoles(Goles);
+            _repoGoles.AddGoles(goles);
         }
         
         private static void IndexGoles()
@@ -210,21 +210,21 @@ namespace TorneoFutbol.App.Consola
         //Program Arbitros
         private static void AddArbitros()
         {
-            var Arbitro = new Arbitros
+            var arbitro = new Arbitro
             {
                 Nombre = "Juanito",
                 Documento = "17990",
                 Telefono = "302202",
                 Colegio = "Normal Superior"
             };
-            _repoArbitros.AddArbitros(Arbitro);
+            _repoArbitros.AddArbitros(arbitro);
         }
         
         private static void IndexArbitros()
         {
-            foreach (var Arbitros in _repoArbitros.GetAllArbitros())
+            foreach (var arbitro in _repoArbitros.GetAllArbitros())
             {
-                Console.WriteLine(Arbitros.Nombre + " " + Arbitros.Documento + " " + Arbitros.Telefono + " " + Arbitros.Colegio);
+                Console.WriteLine(arbitro.Nombre + " " + arbitro.Documento + " " + arbitro.Telefono + " " + arbitro.Colegio);
             }
         }
         private static void DeleteArbitros()

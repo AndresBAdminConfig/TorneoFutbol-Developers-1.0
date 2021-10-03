@@ -1,6 +1,6 @@
 namespace TorneoFutbol.App.Dominio
 {
-    public class Jugadores
+    public class Jugador
     {
         // Identificador único de cada persona
         public int  Id  { get; set; }
@@ -8,7 +8,7 @@ namespace TorneoFutbol.App.Dominio
         public string Numero { get; set; }
         public string Posicion { get; set; }
         //Relación entre Jugadores y equipos
-        public equipos equipos{get; set;}
+        public Equipo Equipos{get; set;}
 
     }
 }

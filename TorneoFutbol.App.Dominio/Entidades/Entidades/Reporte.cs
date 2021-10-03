@@ -8,9 +8,10 @@ namespace TorneoFutbol.App.Dominio
         public string TarjetasAmarillas { get; set; }
         public string TarjetasRojas { get; set; }
         //Relacion Reporte y Goles
-        public Goles Goles {get; set;}
+        public System.Collections.Generic.List<Gol> Goles { get; set; }
         //Relacion Reporte y Partido
-        public Partidos  Partidos { get; set; }
+        public Partido  Partidos { get; set; }
+        
 
     }
 }

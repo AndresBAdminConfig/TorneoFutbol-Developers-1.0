@@ -4,7 +4,7 @@ using TorneoFutbol.App.Dominio;
 namespace TorneoFutbol.App.Persistencia
 {
 
-    public interface IRepositorioEstadios
+    public interface IRepositorioEstadio
     {
         Estadio AddEstadio(Estadio estadio);
         IEnumerable<Estadio> GetAllEstadios();

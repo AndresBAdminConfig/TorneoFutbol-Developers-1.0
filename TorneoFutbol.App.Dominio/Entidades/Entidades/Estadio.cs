@@ -7,7 +7,7 @@ namespace TorneoFutbol.App.Dominio
         public string Nombre { get; set; }
         public string Direccion { get; set; }
         //Relacion Estadio y Municipio
-        public Municipio Municipio{get; set;}
+        public Municipio Municipios{get; set;}
         
 
         

@@ -2,22 +2,19 @@ using System.Collections.Generic;
 using TorneoFutbol.App.Dominio;
 namespace TorneoFutbol.App.Persistencia
 {
-    public class RepositorioEstadios : IRepositorioEstadios
+    public class RepositorioEstadio : IRepositorioEstadio
     {
 
-        private readonly AppContext _appContext;   
-        public RepositorioEstadios(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();   
+        
 
-        Estadio IRepositorioEstadios.AddEstadio(Estadio estadio)
+        Estadio IRepositorioEstadio.AddEstadio(Estadio estadio)
         {
             var estadioAdicionado = _appContext.Estadios.Add(estadio);
             _appContext.SaveChanges();
             return estadioAdicionado.Entity;
         }
-        IEnumerable<Estadio> IRepositorioEstadios.GetAllEstadios()
+        IEnumerable<Estadio> IRepositorioEstadio.GetAllEstadios()
         {
             return _appContext.Estadios;
         }
@@ -40,7 +37,7 @@ namespace TorneoFutbol.App.Persistencia
             {
                 estadioEncontrado.Nombre = estadio.Nombre;
                 estadioEncontrado.Direccion = estadio.Direccion;
-                estadioEncontrado.Municipio = estadio.Municipio;
+                
                 _appContext.SaveChanges();
             }
             return estadioEncontrado;

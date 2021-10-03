@@ -1,7 +1,7 @@
 using System;
 namespace TorneoFutbol.App.Dominio
 {
-    public class Partidos
+    public class Partido
     {
         // Identificador único de cada persona
         public int  Id  { get; set; }
@@ -12,11 +12,10 @@ namespace TorneoFutbol.App.Dominio
         public string MarcadorFinal { get; set; }
         public string Colegio { get; set; }
         //Relacion Partido y Equipos
-        public System.Collections.Generic.List<equipos> equipos { get; set; }
+        public System.Collections.Generic.List<Equipo> Equipos { get; set; }
         //Relacion partido y arbitro
-        public Arbitros Arbitros {get; set;}
-        //Relacion partido y reporte
-        public Reporte Reporte {get; set;}
+        public Arbitro Arbitros {get; set;}
+        
 
 
     }

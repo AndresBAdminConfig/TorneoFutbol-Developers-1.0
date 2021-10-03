@@ -7,31 +7,31 @@ namespace TorneoFutbol.App.Persistencia
 
         private readonly AppContext _appContext = new AppContext();   
         
-        Jugadores IRepositorioJugador.AddJugadores(Jugadores jugadores)
+        Jugador IRepositorioJugador.AddJugadores(Jugador jugadores)
         {
-            var jugadorAdicionado = _appContext.Jugador.Add(jugadores);
+            var jugadorAdicionado = _appContext.Jugadores.Add(jugadores);
             _appContext.SaveChanges();
             return jugadorAdicionado.Entity;
         }
-        IEnumerable<Jugadores> IRepositorioJugador.GetAllJugador()
+        IEnumerable<Jugador> IRepositorioJugador.GetAllJugador()
         {
-            return _appContext.Jugador;
+            return _appContext.Jugadores;
         }
         public void DeleteJugador(int idJugador)
         {
-            var JugadorEncontrado = _appContext.Jugador.Find(idJugador);
+            var JugadorEncontrado = _appContext.Jugadores.Find(idJugador);
             if (JugadorEncontrado == null)
                 return;
-            _appContext.Jugador.Remove(JugadorEncontrado);
+            _appContext.Jugadores.Remove(JugadorEncontrado);
             _appContext.SaveChanges();
         }
-        public Jugadores GetJugador(int idJugador)
+        public Jugador GetJugador(int idJugador)
         {
-            return _appContext.Jugador.Find(idJugador);
+            return _appContext.Jugadores.Find(idJugador);
         }  
-        public Jugadores UpdateJugador(Jugadores jugadores)
+        public Jugador UpdateJugador(Jugador jugadores)
         {
-            var JugadorEncontrado = _appContext.Jugador.Find(jugadores.Id);
+            var JugadorEncontrado = _appContext.Jugadores.Find(jugadores.Id);
             if (JugadorEncontrado != null)
             {
                 JugadorEncontrado.Nombre = jugadores.Nombre;

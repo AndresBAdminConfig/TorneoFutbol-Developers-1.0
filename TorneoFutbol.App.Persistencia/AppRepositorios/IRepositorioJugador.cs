@@ -5,10 +5,10 @@ namespace TorneoFutbol.App.Persistencia
 {
     public interface IRepositorioJugador
     {
-        Jugadores AddJugadores(Jugadores jugadores);
-        IEnumerable<Jugadores> GetAllJugador();
+        Jugador AddJugadores(Jugador jugadores);
+        IEnumerable<Jugador> GetAllJugador();
         void DeleteJugador(int idJugador);
-        Jugadores GetJugador(int idJugador);
-        Jugadores UpdateJugador(Jugadores jugadores);
+        Jugador GetJugador(int idJugador);
+        Jugador UpdateJugador(Jugador jugador);
     }
 }

@@ -1,17 +1,17 @@
-using System.Collections.Generic;
-using TorneoFutbol.App.Dominio;
+//using System.Collections.Generic;
+//using TorneoFutbol.App.Dominio;
 
-namespace TorneoFutbol.App.Persistencia
-{
+//namespace TorneoFutbol.App.Persistencia
+//{
 
-    public interface IRepositorioEquipo
-    {
-        equipos AddEquipo(equipos equipo);
-        IEnumerable<equipos> GetAllEquipo();
-        void DeleteEquipo(int idEquipo);
-        equipos GetEquipo(int idEquipo);
-        equipos UpdateEquipo(equipos equipo);
+  //  public interface IRepositorioEquipo
+   // {
+     //   Equipo AddEquipo(Equipo Equipos);
+       // IEnumerable<Equipo> GetAllEquipo();
+        //void DeleteEquipo(int idEquipo);
+        //Equipo GetEquipo(int idEquipo);
+        //Equipo UpdateEquipo(Equipo Equipos);
 
-    }
+    //}
 
-}
+//}
