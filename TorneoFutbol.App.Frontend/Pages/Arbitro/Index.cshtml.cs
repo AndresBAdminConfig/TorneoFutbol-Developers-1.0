@@ -12,7 +12,7 @@ namespace TorneoFutbol.App.Frontend.Pages.Arbitros
     public class IndexModel : PageModel
     {
         private readonly IRepositorioArbitros _repoArbitros;
-        public IEnumerable<Arbitro> arbitros {get;set;}
+        public IEnumerable<Arbitros> arbitros {get; set;}
         public IndexModel(IRepositorioArbitros repoArbitros)
         {
             _repoArbitros = repoArbitros;
