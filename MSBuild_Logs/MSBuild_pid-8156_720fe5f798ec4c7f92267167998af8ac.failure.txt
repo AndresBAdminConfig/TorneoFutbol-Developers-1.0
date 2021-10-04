@@ -1,0 +1,47 @@
+UNHANDLED EXCEPTIONS FROM PROCESS 8156:
+=====================
+2/10/2021 7:45:15 p. m.
+System.OutOfMemoryException: Se produjo una excepción de tipo 'System.OutOfMemoryException'.
+   en Go5(RegexRunner )
+   en System.Text.RegularExpressions.RegexRunner.Scan(Regex regex, String text, Int32 textbeg, Int32 textend, Int32 textstart, Int32 prevlen, Boolean quick, TimeSpan timeout)
+   en System.Text.RegularExpressions.Regex.Run(Boolean quick, Int32 prevlen, String input, Int32 beginning, Int32 length, Int32 startat)
+   en System.Text.RegularExpressions.Regex.Match(String input, Int32 startat)
+   en System.Text.RegularExpressions.RegexReplacement.Replace(MatchEvaluator evaluator, Regex regex, String input, Int32 count, Int32 startat)
+   en System.Text.RegularExpressions.Regex.Replace(String input, MatchEvaluator evaluator)
+   en Microsoft.Build.Evaluation.Expander`2.MetadataExpander.ExpandMetadataLeaveEscaped(String expression, IMetadataTable metadata, ExpanderOptions options, IElementLocation elementLocation)
+   en Microsoft.Build.Evaluation.Expander`2.ExpandIntoStringLeaveEscaped(String expression, ExpanderOptions options, IElementLocation elementLocation)
+   en Microsoft.Build.BackEnd.TaskBuilder.LogSkippedTask(ItemBucket bucket, TaskExecutionMode howToExecuteTask)
+   en Microsoft.Build.BackEnd.TaskBuilder.<ExecuteBucket>d__19.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   en Microsoft.Build.BackEnd.TaskBuilder.<ExecuteTask>d__18.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en Microsoft.Build.BackEnd.TaskBuilder.<ExecuteTask>d__13.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   en Microsoft.Build.BackEnd.TargetEntry.<ProcessBucket>d__51.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   en Microsoft.Build.BackEnd.TargetEntry.<ExecuteTarget>d__44.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   en Microsoft.Build.BackEnd.TargetBuilder.<ProcessTargetStack>d__23.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en Microsoft.Build.BackEnd.TargetBuilder.<BuildTargets>d__10.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en Microsoft.Build.BackEnd.RequestBuilder.<BuildProject>d__67.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en Microsoft.Build.BackEnd.RequestBuilder.<BuildAndReport>d__58.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en Microsoft.Build.BackEnd.RequestBuilder.<RequestThreadProc>d__57.MoveNext()
+===================
