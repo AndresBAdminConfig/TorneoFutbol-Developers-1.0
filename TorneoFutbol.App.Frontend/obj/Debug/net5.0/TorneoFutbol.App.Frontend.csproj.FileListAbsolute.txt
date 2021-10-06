@@ -148,3 +148,5 @@ C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\ob
 C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\TorneoFutbol.App.Frontend.genruntimeconfig.cache
 C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Details.cshtml.g.cs
 C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Index.cshtml.g.cs
+C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Reportes\Details.cshtml.g.cs
+C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Reportes\Index.cshtml.g.cs
