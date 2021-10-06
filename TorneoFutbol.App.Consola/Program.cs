@@ -38,11 +38,11 @@ namespace TorneoFutbol.App.Consola
             //IndexDesempeñoEquipos();
             //DeleteDesempeñoEquipos();
             //Goles
-            //AddGoles();
+            AddGoles();
             //IndexGoles();
             //DeleteGoles();
             //Arbitros
-            //AddArbitros();
+            AddArbitros();
             //IndexArbitros();
             //DeleteArbitros();
             //DirectorTecnico
@@ -189,7 +189,7 @@ namespace TorneoFutbol.App.Consola
         //Program Goles
         private static void AddGoles()
         {
-            var Goles = new Goles
+            var Goles = new Gol
             {
                 MinutoGol = "20:06"
             };
@@ -210,12 +210,12 @@ namespace TorneoFutbol.App.Consola
         //Program Arbitros
         private static void AddArbitros()
         {
-            var Arbitro = new Arbitros
+            var Arbitro = new Arbitro
             {
-                Nombre = "Carlos",
-                Documento = "17990",
-                Telefono = "302202",
-                Colegio = "Normal Superior"
+                Nombre = "Luisa",
+                Documento = "987465",
+                Telefono = "30220112",
+                Colegio = "Institución Educativa"
             };
             _repoArbitros.AddArbitros(Arbitro);
         }
