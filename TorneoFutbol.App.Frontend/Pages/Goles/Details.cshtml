@@ -2,3 +2,15 @@
 @model TorneoFutbol.App.Frontend.Pages.Goles.DetailsModel
 @{
 }
+<h1>Detalles del Gol</h1>
+<table class="table table-striped">
+    <tr>
+        <th scope="col">Jugadores</th>
+        <td>@Model.gol.Jugadores</td>
+    </tr>
+    <tr>
+        <th scope="col">Documento</th>
+        <td>@Model.gol.MinutoGol</td>
+    </tr>
+</table>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

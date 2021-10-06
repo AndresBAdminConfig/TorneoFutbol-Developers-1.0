@@ -61,3 +61,16 @@ C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Fro
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\TorneoFutbol.App.Frontend.dll
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\ref\TorneoFutbol.App.Frontend.dll
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\TorneoFutbol.App.Frontend.pdb
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\bin\Debug\net5.0\appsettings.json
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\bin\Debug\net5.0\TorneoFutbol.App.Frontend.exe
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\bin\Debug\net5.0\TorneoFutbol.App.Frontend.deps.json
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\bin\Debug\net5.0\TorneoFutbol.App.Frontend.runtimeconfig.json
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\bin\Debug\net5.0\TorneoFutbol.App.Frontend.runtimeconfig.dev.json
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\bin\Debug\net5.0\TorneoFutbol.App.Frontend.dll
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\bin\Debug\net5.0\ref\TorneoFutbol.App.Frontend.dll
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\bin\Debug\net5.0\TorneoFutbol.App.Frontend.pdb
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\bin\Debug\net5.0\TorneoFutbol.App.Frontend.Views.dll
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\bin\Debug\net5.0\TorneoFutbol.App.Frontend.Views.pdb
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\TorneoFutbol.App.Frontend.csproj.CopyComplete
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\TorneoFutbol.App.Frontend.genruntimeconfig.cache
