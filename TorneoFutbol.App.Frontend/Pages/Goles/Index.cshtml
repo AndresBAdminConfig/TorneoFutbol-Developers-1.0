@@ -3,3 +3,25 @@
 @{
 }
 <h1>Listado de Goles</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Minuto del Gol</th>
+            <th scope="col">Jugador</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Gol in Model.goles)
+        {
+            <tr>
+                <td>@Gol.MinutoGol</td>
+                <td>@Gol.Jugadores</td>
+                <td>
+                    <a class="btn btn-secondary" asp-page="./Details" asp-route-id="@Gol.Id">Detalle</a>
+                    <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@Gol.Id">Modificar</a>
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+</table>
