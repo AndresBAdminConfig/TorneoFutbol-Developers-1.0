@@ -13,8 +13,13 @@ namespace TorneoFutbol.App.Frontend.Pages.Goles
     {
         private readonly IRepositorioGoles _repoGoles;
         public IEnumerable<Gol> goles {get; set;}
+        public IndexModel(IRepositorioGoles repoGoles)
+        {
+            _repoGoles = repoGoles;
+        }
         public void OnGet()
         {
+            goles = _repoGoles.GetAllGoles();
         }
     }
 }

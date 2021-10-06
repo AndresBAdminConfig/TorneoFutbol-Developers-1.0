@@ -13,8 +13,13 @@ namespace TorneoFutbol.App.Frontend.Pages.Arbitros
     {
         private readonly IRepositorioArbitros _repoArbitros;
         public IEnumerable<Arbitro> arbitros {get; set;}
+        public IndexModel(IRepositorioArbitros repoArbitros)
+        {
+            _repoArbitros = repoArbitros;
+        }
         public void OnGet()
         {
+            arbitros = _repoArbitros.GetAllArbitros();
         }
     }
 }
