@@ -1,6 +1,6 @@
 namespace TorneoFutbol.App.Dominio
 {
-    public class Arbitros
+    public class Arbitro
     {
         // Identificador único de cada persona
         public int  Id  { get; set; }

@@ -14,7 +14,7 @@ namespace TorneoFutbol.App.Dominio
         //Relacion Partido y Equipos
         public System.Collections.Generic.List<equipos> equipos { get; set; }
         //Relacion partido y arbitro
-        public Arbitros Arbitros {get; set;}
+        public Arbitro Arbitros {get; set;}
         //Relacion partido y reporte
         public Reporte Reporte {get; set;}
 

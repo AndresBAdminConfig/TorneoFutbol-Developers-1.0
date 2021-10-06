@@ -5,10 +5,10 @@ namespace TorneoFutbol.App.Persistencia
 {
     public interface IRepositorioArbitros
     {
-        Arbitros AddArbitros(Arbitros arbitros);
-        IEnumerable<Arbitros> GetAllArbitros();
+        Arbitro AddArbitros(Arbitro arbitros);
+        IEnumerable<Arbitro> GetAllArbitros();
         void DeleteArbitros(int idArbitros);
-        Arbitros UpdateArbitros(Arbitros arbitros);    
-        Arbitros GetArbitros(int idArbitros);
+        Arbitro UpdateArbitros(Arbitro arbitros);    
+        Arbitro GetArbitros(int idArbitros);
     }
 }

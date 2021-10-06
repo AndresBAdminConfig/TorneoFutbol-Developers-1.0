@@ -5,10 +5,10 @@ namespace TorneoFutbol.App.Persistencia
 {
     public interface IRepositorioGoles
     {
-        Goles AddGoles(Goles goles);
-        IEnumerable<Goles> GetAllGoles();
+        Gol AddGoles(Gol goles);
+        IEnumerable<Gol> GetAllGoles();
         void DeleteGoles(int idGoles);
-        Goles UpdateGoles(Goles goles);    
-        Goles GetGoles(int idGoles);
+        Gol UpdateGoles(Gol goles);    
+        Gol GetGoles(int idGoles);
     }
 }

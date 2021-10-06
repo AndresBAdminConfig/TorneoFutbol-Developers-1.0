@@ -12,7 +12,7 @@ namespace TorneoFutbol.App.Frontend.Pages.Goles
     public class IndexModel : PageModel
     {
         private readonly IRepositorioGoles _repoGoles;
-        public IEnumerable<Goles> goles {get; set;}
+        public IEnumerable<Gol> goles {get; set;}
         public void OnGet()
         {
         }
