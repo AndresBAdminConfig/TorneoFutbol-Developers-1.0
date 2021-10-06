@@ -212,7 +212,7 @@ namespace TorneoFutbol.App.Consola
         {
             var Arbitro = new Arbitros
             {
-                Nombre = "Juanito",
+                Nombre = "Carlos",
                 Documento = "17990",
                 Telefono = "302202",
                 Colegio = "Normal Superior"
