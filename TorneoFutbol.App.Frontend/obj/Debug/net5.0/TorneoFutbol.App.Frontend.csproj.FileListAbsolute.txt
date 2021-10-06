@@ -74,3 +74,6 @@ C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.F
 C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Details.cshtml.g.cs
 C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Index.cshtml.g.cs
 C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Details.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Create.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Create.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Edit.cshtml.g.cs
