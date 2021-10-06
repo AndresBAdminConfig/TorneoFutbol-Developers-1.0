@@ -8,31 +8,31 @@ namespace TorneoFutbol.App.Persistencia
         
         private readonly AppContext _appContext = new AppContext();
         
-        Goles IRepositorioGoles.AddGoles(Goles goles)
+        Gol IRepositorioGoles.AddGoles(Gol goles)
         {
-            var golesAdicionado = _appContext.Gol.Add(goles);
+            var golesAdicionado = _appContext.Goles.Add(goles);
             _appContext.SaveChanges();
             return golesAdicionado.Entity;
         }
-        IEnumerable<Goles> IRepositorioGoles.GetAllGoles()
+        IEnumerable<Gol> IRepositorioGoles.GetAllGoles()
         {
-            return _appContext.Gol;
+            return _appContext.Goles;
         }
         public void DeleteGoles(int idGoles)
         {
-            var GolesEncontrado = _appContext.Gol.Find(idGoles);
+            var GolesEncontrado = _appContext.Goles.Find(idGoles);
             if (GolesEncontrado == null)
                 return;
-            _appContext.Gol.Remove(GolesEncontrado);
+            _appContext.Goles.Remove(GolesEncontrado);
             _appContext.SaveChanges();
         }
-        public Goles GetGoles(int idGoles)
+        public Gol GetGoles(int idGoles)
         {
-            return _appContext.Gol.Find(idGoles);
+            return _appContext.Goles.Find(idGoles);
         } 
-        public Goles UpdateGoles(Goles goles)
+        public Gol UpdateGoles(Gol goles)
         {
-            var GolesEncontrado = _appContext.Gol.Find(goles.Id);
+            var GolesEncontrado = _appContext.Goles.Find(goles.Id);
             if (GolesEncontrado != null)
             {
                 GolesEncontrado.MinutoGol=goles.MinutoGol;

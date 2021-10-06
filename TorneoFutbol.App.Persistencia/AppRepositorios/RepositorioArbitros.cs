@@ -7,31 +7,31 @@ namespace TorneoFutbol.App.Persistencia
 
         private readonly AppContext _appContext = new AppContext();
         
-        Arbitros IRepositorioArbitros.AddArbitros(Arbitros arbitros)
+        Arbitro IRepositorioArbitros.AddArbitros(Arbitro arbitros)
         {
-            var arbitrosAdicionado = _appContext.Arbitro.Add(arbitros);
+            var arbitrosAdicionado = _appContext.Arbitros.Add(arbitros);
             _appContext.SaveChanges();
             return arbitrosAdicionado.Entity;
         }
-        IEnumerable<Arbitros> IRepositorioArbitros.GetAllArbitros()
+        IEnumerable<Arbitro> IRepositorioArbitros.GetAllArbitros()
         {
-            return _appContext.Arbitro;
+            return _appContext.Arbitros;
         }
         public void DeleteArbitros(int idArbitros)
         {
-            var ArbitrosEncontrado = _appContext.Arbitro.Find(idArbitros);
+            var ArbitrosEncontrado = _appContext.Arbitros.Find(idArbitros);
             if (ArbitrosEncontrado == null)
                 return;
-            _appContext.Arbitro.Remove(ArbitrosEncontrado);
+            _appContext.Arbitros.Remove(ArbitrosEncontrado);
             _appContext.SaveChanges();
         }
-        public Arbitros GetArbitros(int idArbitros)
+        public Arbitro GetArbitros(int idArbitros)
         {
-            return _appContext.Arbitro.Find(idArbitros);
+            return _appContext.Arbitros.Find(idArbitros);
         } 
-        public Arbitros UpdateArbitros(Arbitros arbitros)
+        public Arbitro UpdateArbitros(Arbitro arbitros)
         {
-            var ArbitrosEncontrado = _appContext.Arbitro.Find(arbitros.Id);
+            var ArbitrosEncontrado = _appContext.Arbitros.Find(arbitros.Id);
             if (ArbitrosEncontrado != null)
             {
                 ArbitrosEncontrado.Nombre=arbitros.Nombre;
