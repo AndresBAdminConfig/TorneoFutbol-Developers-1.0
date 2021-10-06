@@ -28,6 +28,7 @@ namespace TorneoFutbol.App.Frontend
             services.AddRazorPages();
             services.AddSingleton<IRepositorioJugador, RepositorioJugador>();
             services.AddSingleton<IRepositorioMunicipio, RepositorioMunicipio>();
+            services.AddSingleton<IRepositorioEstadio, RepositorioEstadio>();
     
         }
 
