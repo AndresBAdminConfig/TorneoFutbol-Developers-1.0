@@ -42,7 +42,7 @@ namespace TorneoFutbol.App.Consola
             //IndexGoles();
             //DeleteGoles();
             //Arbitros
-            AddArbitros();
+            //AddArbitros();
             //IndexArbitros();
             //DeleteArbitros();
             //DirectorTecnico
@@ -189,18 +189,18 @@ namespace TorneoFutbol.App.Consola
         //Program Goles
         private static void AddGoles()
         {
-            var Goles = new Gol
+            var Gol = new Gol
             {
-                MinutoGol = "20:06"
+                MinutoGol = new DateTime(1974, 7, 10, 7, 10, 24)  
             };
-            _repoGoles.AddGoles(Goles);
+            _repoGoles.AddGoles(Gol);
         }
         
         private static void IndexGoles()
         {
-            foreach (var goles in _repoGoles.GetAllGoles())
+            foreach (var Gol in _repoGoles.GetAllGoles())
             {
-                Console.WriteLine(goles.MinutoGol);
+                Console.WriteLine(Gol.MinutoGol);
             }
         }
         private static void DeleteGoles()
@@ -212,10 +212,10 @@ namespace TorneoFutbol.App.Consola
         {
             var Arbitro = new Arbitro
             {
-                Nombre = "Luisa",
-                Documento = "987465",
-                Telefono = "30220112",
-                Colegio = "Institución Educativa"
+                Nombre = "Samuel",
+                Documento = "987258",
+                Telefono = "3021654",
+                Colegio = "Normal Superior Sol"
             };
             _repoArbitros.AddArbitros(Arbitro);
         }
