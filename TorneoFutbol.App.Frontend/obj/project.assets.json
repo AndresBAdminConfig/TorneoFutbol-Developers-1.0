@@ -5737,19 +5737,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
+    "C:\\Users\\Felipe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
+      "projectUniqueName": "C:\\Users\\Felipe\\Desktop\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
       "projectName": "TorneoFutbol.App.Frontend",
-      "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
-      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\obj\\",
+      "projectPath": "C:\\Users\\Felipe\\Desktop\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
+      "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Felipe\\Desktop\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5761,11 +5761,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj"
+            "C:\\Users\\Felipe\\Desktop\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\Felipe\\Desktop\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj"
             },
-            "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj"
+            "C:\\Users\\Felipe\\Desktop\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\Felipe\\Desktop\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj"
             }
           }
         }
@@ -5797,8 +5797,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Felipe\\Desktop\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
