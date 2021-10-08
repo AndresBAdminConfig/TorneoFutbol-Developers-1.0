@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Felipe\\.nuget\\packages\\": {}
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Felipe\\Desktop\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
       "projectName": "TorneoFutbol.App.Dominio",
-      "projectPath": "C:\\Users\\Felipe\\Desktop\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Felipe\\Desktop\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\obj\\",
+      "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -13,5 +13,4 @@ namespace TorneoFutbol.App.Persistencia
         Equipo UpdateEquipo(Equipo Equipos);
 
     }
-
 }

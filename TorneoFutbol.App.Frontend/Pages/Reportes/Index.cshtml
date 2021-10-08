@@ -1,0 +1,24 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.Pages.Reportes.IndexModel
+@{
+}
+<h1>Listado de Reportes</h1>
+<table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Marcador Final</th>
+                <th scope="col">Tarjetas Amarillas</th>
+                <th scope="col">Tarjetas Rojas</th>
+            </tr>
+        </thead>
+        </tbody>
+            @foreach (var reporte in Model.reportes)
+            {
+                <tr>
+                    <td>@reporte.MarcadorFinal</td>
+                    <td>@reporte.TarjetasAmarillas</td>
+                    <td>@reporte.TarjetasRojas</td>
+                </tr>
+            }
+        </tbody>
+</table>
