@@ -9,9 +9,15 @@ namespace TorneoFutbol.App.Consola
         private static IRepositorioReporte _repoReporte =  new RepositorioReporte();
         private static IRepositorioJugador _repoJugador = new RepositorioJugador();
         private static IRepositorioMunicipio _repoMunicipio = new RepositorioMunicipio();
+<<<<<<< HEAD
         private static IRepositorioGol _repoGoles = new RepositorioGol();
         private static IRepositorioArbitro _repoArbitros = new RepositorioArbitro();
         private static IRepositorioPartido _repoPartidos = new RepositorioPartido();
+=======
+        private static IRepositorioGoles _repoGoles = new RepositorioGoles();
+        private static IRepositorioArbitros _repoArbitros = new RepositorioArbitros();
+        private static IRepositorioPartidos _repoPartidos = new RepositorioPartidos();
+>>>>>>> origin/Goles_Arbitros
         private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico();
         private static IRepositorioDesempeñoEquipo _repoDesempeñoEquipo = new RepositorioDesempeñoEquipo();
 
@@ -38,7 +44,7 @@ namespace TorneoFutbol.App.Consola
             //IndexDesempeñoEquipos();
             //DeleteDesempeñoEquipos();
             //Goles
-            //AddGoles();
+            AddGoles();
             //IndexGoles();
             //DeleteGoles();
             //Arbitros
@@ -189,18 +195,26 @@ namespace TorneoFutbol.App.Consola
         //Program Goles
         private static void AddGoles()
         {
+<<<<<<< HEAD
             var goles = new Gol
+=======
+            var Gol = new Gol
+>>>>>>> origin/Goles_Arbitros
             {
-                MinutoGol = "20:06"
+                MinutoGol = new DateTime(1974, 7, 10, 7, 10, 24)  
             };
+<<<<<<< HEAD
             _repoGoles.AddGoles(goles);
+=======
+            _repoGoles.AddGoles(Gol);
+>>>>>>> origin/Goles_Arbitros
         }
         
         private static void IndexGoles()
         {
-            foreach (var goles in _repoGoles.GetAllGoles())
+            foreach (var Gol in _repoGoles.GetAllGoles())
             {
-                Console.WriteLine(goles.MinutoGol);
+                Console.WriteLine(Gol.MinutoGol);
             }
         }
         private static void DeleteGoles()
@@ -210,12 +224,16 @@ namespace TorneoFutbol.App.Consola
         //Program Arbitros
         private static void AddArbitros()
         {
+<<<<<<< HEAD
             var arbitro = new Arbitro
+=======
+            var Arbitro = new Arbitro
+>>>>>>> origin/Goles_Arbitros
             {
-                Nombre = "Juanito",
-                Documento = "17990",
-                Telefono = "302202",
-                Colegio = "Normal Superior"
+                Nombre = "Samuel",
+                Documento = "987258",
+                Telefono = "3021654",
+                Colegio = "Normal Superior Sol"
             };
             _repoArbitros.AddArbitros(arbitro);
         }
