@@ -9,6 +9,8 @@
                 <th scope="col">Marcador Final</th>
                 <th scope="col">Tarjetas Amarillas</th>
                 <th scope="col">Tarjetas Rojas</th>
+                <th scope="col">Acciones</th>
+
             </tr>
         </thead>
         </tbody>
@@ -18,6 +20,7 @@
                     <td>@reporte.MarcadorFinal</td>
                     <td>@reporte.TarjetasAmarillas</td>
                     <td>@reporte.TarjetasRojas</td>
+                    <td><a class="btn btn-secondary" asp-page = "./Details" asp-route-id="@reporte.Id"> Detalle </a></td>
                 </tr>
             }
         </tbody>

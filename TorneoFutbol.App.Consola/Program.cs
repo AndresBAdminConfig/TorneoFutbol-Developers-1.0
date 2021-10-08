@@ -55,8 +55,8 @@ namespace TorneoFutbol.App.Consola
         {
             var estadio = new Estadio
             {
-                Nombre = "Atanasio Girardot",
-                Direccion = "Carrera 74#48010"
+                Nombre = "Nemesio Camacho El Campín",
+                Direccion = "Carrera 30 y calle 57"
             };
             _repoEstadio.AddEstadio(estadio);
         }
