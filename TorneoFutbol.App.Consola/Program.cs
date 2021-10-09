@@ -75,9 +75,9 @@ namespace TorneoFutbol.App.Consola
         {
             var Reportes = new Reporte
             {
-                MarcadorFinal = "1 - 1",
-                TarjetasAmarillas = "0",
-                TarjetasRojas = "0"
+                MarcadorFinal = "1 - 4",
+                TarjetasAmarillas = "5",
+                TarjetasRojas = "1"
             };
             _repoReporte.AddReporte(Reportes);
         } 
