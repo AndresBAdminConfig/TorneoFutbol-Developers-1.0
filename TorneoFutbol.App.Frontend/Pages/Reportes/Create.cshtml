@@ -1,0 +1,23 @@
+﻿@page
+@using TorneoFutbol.App.Dominio;
+@model TorneoFutbol.App.Frontend.Pages.Reportes.CreateModel
+@{
+}
+<h1>Nuevo Estadio</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="reporte.MarcadorFinal"></label>
+        <input asp-for="reporte.MarcadorFinal" class="form-control" placeholder="Digíte el Marcador Final del Partido">
+    </div>
+    <div class="form-group">
+        <label asp-for="reporte.TarjetasAmarillas"></label>
+        <input asp-for="reporte.TarjetasAmarillas" class="form-control" placeholder="Digíte las Tarjetas Amarillas del partido">
+    </div>
+    <div class="form-group">
+        <label asp-for="reporte.TarjetasRojas"></label>
+        <input asp-for="reporte.TarjetasRojas" class="form-control" placeholder="Digíte las Tarjetas Rojas del partido">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Crear Reporte</button>
+</form>
+
+        
