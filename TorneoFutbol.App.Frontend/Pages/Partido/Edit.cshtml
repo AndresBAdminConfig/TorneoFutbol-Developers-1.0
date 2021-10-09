@@ -1,0 +1,42 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.pages.Partido.EditModel
+@{
+}
+<h1>Listado De Partidos</h1>
+<form method="post">
+     <div class="form-group">
+        <label asp-for="partido.Id"></label>
+        <input asp-for="partido.Id" class ="form-control" readonly>
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.HoraFecha"></label>
+        <input asp-for="partido.HoraFecha" class ="form-control">
+        <span asp-validation-for="partido.HoraFecha" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.EquipoLocal"></label>
+        <input asp-for="partido.EquipoLocal" class ="form-control">
+        <span asp-validation-for="partido.EquipoLocal" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.EquipoVisitante"></label>
+        <input asp-for="partido.EquipoVisitante" class ="form-control">
+        <span asp-validation-for="partido.EquipoVisitante" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.MarcadorInicial"></label>
+        <input asp-for="partido.MarcadorInicial" class ="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.MarcadorFinal"></label>
+        <input asp-for="partido.MarcadorFinal" class ="form-control">
+        <span asp-validation-for="partido.MarcadorFinal" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.Colegio"></label>
+        <input asp-for="partido.Colegio" class ="form-control">
+        <span asp-validation-for="partido.Colegio" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Editar partido</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

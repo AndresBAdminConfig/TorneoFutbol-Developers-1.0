@@ -1,0 +1,32 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.Pages.DesempeñoEquipo.CreateModel
+@{
+}
+<h1>Listado De Partidos</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="DesempeñoEquipo.Cantidad_Partidos_Jugados"></label>
+        <input asp-for="Partido.Cantidad_Partidos_Jugados" class ="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Desempeño.Cantidad_Partidos_Ganados"></label>
+        <input asp-for="Desempeño.Cantidad_Partidos_Ganados" class ="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Desempeño.Cantidad_Partidos_Empatados"></label>
+        <input asp-for="Desempeño.Cantidad_Partidos_Empatados" class ="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Desempeño.GF"></label>
+        <input asp-for="Desempeño.GF" class ="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Desempeño.GC"></label>
+        <input asp-for="Desempeño.GC" class ="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Desempeño.Puntos"></label>
+        <input asp-for="Desempeño.Puntos" class ="form-control">
+    </div>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
