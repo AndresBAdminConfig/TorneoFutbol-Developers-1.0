@@ -9,15 +9,9 @@ namespace TorneoFutbol.App.Consola
         private static IRepositorioReporte _repoReporte =  new RepositorioReporte();
         private static IRepositorioJugador _repoJugador = new RepositorioJugador();
         private static IRepositorioMunicipio _repoMunicipio = new RepositorioMunicipio();
-<<<<<<< HEAD
-        private static IRepositorioGol _repoGoles = new RepositorioGol();
-        private static IRepositorioArbitro _repoArbitros = new RepositorioArbitro();
-        private static IRepositorioPartido _repoPartidos = new RepositorioPartido();
-=======
         private static IRepositorioGoles _repoGoles = new RepositorioGoles();
         private static IRepositorioArbitros _repoArbitros = new RepositorioArbitros();
         private static IRepositorioPartidos _repoPartidos = new RepositorioPartidos();
->>>>>>> origin/Goles_Arbitros
         private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico();
         private static IRepositorioDesempeñoEquipo _repoDesempeñoEquipo = new RepositorioDesempeñoEquipo();
 
@@ -195,19 +189,11 @@ namespace TorneoFutbol.App.Consola
         //Program Goles
         private static void AddGoles()
         {
-<<<<<<< HEAD
-            var goles = new Gol
-=======
             var Gol = new Gol
->>>>>>> origin/Goles_Arbitros
             {
                 MinutoGol = new DateTime(1974, 7, 10, 7, 10, 24)  
             };
-<<<<<<< HEAD
-            _repoGoles.AddGoles(goles);
-=======
             _repoGoles.AddGoles(Gol);
->>>>>>> origin/Goles_Arbitros
         }
         
         private static void IndexGoles()
@@ -224,11 +210,7 @@ namespace TorneoFutbol.App.Consola
         //Program Arbitros
         private static void AddArbitros()
         {
-<<<<<<< HEAD
-            var arbitro = new Arbitro
-=======
             var Arbitro = new Arbitro
->>>>>>> origin/Goles_Arbitros
             {
                 Nombre = "Samuel",
                 Documento = "987258",
