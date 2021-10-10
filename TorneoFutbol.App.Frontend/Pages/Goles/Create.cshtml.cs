@@ -13,7 +13,6 @@ namespace TorneoFutbol.App.Frontend.Pages.Goles
     {
         private readonly IRepositorioGol _repoGoles;
         public Gol gol {get; set;}
-        //public IEnumerable<Gol> goles {get; set;}
         public CreateModel(IRepositorioGol repoGoles)
         {
             _repoGoles = repoGoles;
