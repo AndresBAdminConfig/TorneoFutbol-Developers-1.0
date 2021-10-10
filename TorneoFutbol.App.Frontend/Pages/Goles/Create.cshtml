@@ -1,0 +1,21 @@
+﻿@page
+<!--
+    using TorneoFutbol.App.Dominio
+-->
+@model TorneoFutbol.App.Frontend.Pages.Goles.CreateModel
+@{
+}
+<h1>Nuevo Gol</h1>
+<form method = "post">
+    <div class="form-group">
+        <label asp-for="gol.MinutoGol"></label>
+        <input asp-for="gol.MinutoGol" class="form-control" placeholder="2021-01-01 00:00:00">
+        <span class="text-danger" asp-validation-for="gol.MinutoGol"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="gol.jugador"></label>
+        <input asp-for="gol.jugador" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Crear Gol</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

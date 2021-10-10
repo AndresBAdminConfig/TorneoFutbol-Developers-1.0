@@ -14,7 +14,7 @@
         @foreach (var gol in Model.goles)
         {
             <tr>
-                <td>@gol.Jugadores</td>
+                <td>@gol.jugador</td>
                 <td>@gol.MinutoGol</td>
                 <td>
                     <a class="btn btn-secondary" asp-page="./Details" asp-route-id="@gol.Id">Detalle</a>
