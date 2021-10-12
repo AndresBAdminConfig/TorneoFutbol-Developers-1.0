@@ -9,27 +9,30 @@ using TorneoFutbol.App.Persistencia;
 
 namespace TorneoFutbol.App.Frontend.Pages.Goles
 {
-    public class CreateModel : PageModel
+    public class EditModel : PageModel
     {
         private readonly IRepositorioGol _repoGoles;
         public Gol gol {get; set;}
-        public CreateModel(IRepositorioGol repoGoles)
+        public EditModel(IRepositorioGol repoGoles)
         {
             _repoGoles = repoGoles;
         }
-        public void OnGet()
+
+        public IActionResult OnGet(int Id)
         {
-            gol = new  Gol();
-        }
-        public IActionResult OnPost (Gol gol)
-        {
-            if (ModelState.IsValid)
+            gol = _repoGoles.GetGoles(Id);
+            if (gol == null)
             {
-                _repoGoles.AddGoles(gol);
-                return RedirectToPage("Index");
+                return NotFound();
             } else {
                 return Page();
             }
+        }
+
+        public IActionResult OnPost (Gol gol)
+        {
+            _repoGoles.AddGoles(gol);
+            return RedirectToPage("Index");
         }
     }
 }

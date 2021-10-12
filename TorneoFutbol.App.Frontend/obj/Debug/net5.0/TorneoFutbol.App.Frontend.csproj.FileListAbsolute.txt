@@ -386,3 +386,5 @@ C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Fro
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Index.cshtml.g.cs
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Reportes\Details.cshtml.g.cs
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Reportes\Index.cshtml.g.cs
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Edit.cshtml.g.cs
+C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Goles\Edit.cshtml.g.cs
