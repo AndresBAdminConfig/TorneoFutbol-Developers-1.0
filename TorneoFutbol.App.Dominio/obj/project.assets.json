@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
+    "C:\\Users\\Leidy Moreno\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Leidy Moreno\\OneDrive\\Documentos\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
       "projectName": "TorneoFutbol.App.Dominio",
-      "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\obj\\",
+      "projectPath": "C:\\Users\\Leidy Moreno\\OneDrive\\Documentos\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\Leidy Moreno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leidy Moreno\\OneDrive\\Documentos\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Leidy Moreno\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
