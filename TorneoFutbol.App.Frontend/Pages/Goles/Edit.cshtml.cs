@@ -31,7 +31,7 @@ namespace TorneoFutbol.App.Frontend.Pages.Goles
 
         public IActionResult OnPost (Gol gol)
         {
-            _repoGoles.AddGoles(gol);
+            _repoGoles.UpdateGoles(gol);
             return RedirectToPage("Index");
         }
     }
