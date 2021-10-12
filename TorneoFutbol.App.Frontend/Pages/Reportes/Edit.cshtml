@@ -1,10 +1,14 @@
 ﻿@page
 @using TorneoFutbol.App.Dominio;
-@model TorneoFutbol.App.Frontend.Pages.Reportes.CreateModel
+@model TorneoFutbol.App.Frontend.Page.Reportes.EditModel
 @{
 }
-<h1>Nuevo Estadio</h1>
+<h1>Modificacion Reporte</h1>
 <form method="post">
+    <div class="form-group">
+        <label asp-for="reporte.Id"></label>
+        <input asp-for="reporte.Id" class="form-control" readonly">
+    </div>
     <div class="form-group">
         <label asp-for="reporte.MarcadorFinal"></label>
         <input asp-for="reporte.MarcadorFinal" class="form-control" placeholder="Digíte el Marcador Final del Partido">
@@ -20,7 +24,6 @@
         <input asp-for="reporte.TarjetasRojas" class="form-control" placeholder="Digíte las Tarjetas Rojas del partido">
         <span class="text-danger"  asp-validation-for="reporte.TarjetasRojas" ></span>
     </div>
-    <button type="submit" class="btn btn-primary btn-block">Crear Reporte</button>
+    <button type="submit" class="btn btn-primary btn-block">Actualizar Reporte</button>
 </form>
 <a class="btn btn-secondary" asp-page=./Index >Volver</a>
-        
