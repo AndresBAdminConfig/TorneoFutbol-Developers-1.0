@@ -8,14 +8,17 @@
     <div class="form-group">
         <label asp-for="reporte.MarcadorFinal"></label>
         <input asp-for="reporte.MarcadorFinal" class="form-control" placeholder="Digíte el Marcador Final del Partido">
+        <span class="text-danger"  asp-validation-for="reporte.MarcadorFinal" ></span>
     </div>
     <div class="form-group">
         <label asp-for="reporte.TarjetasAmarillas"></label>
         <input asp-for="reporte.TarjetasAmarillas" class="form-control" placeholder="Digíte las Tarjetas Amarillas del partido">
+        <span class="text-danger"  asp-validation-for="reporte.TarjetasAmarillas" ></span>
     </div>
     <div class="form-group">
         <label asp-for="reporte.TarjetasRojas"></label>
         <input asp-for="reporte.TarjetasRojas" class="form-control" placeholder="Digíte las Tarjetas Rojas del partido">
+        <span class="text-danger"  asp-validation-for="reporte.TarjetasRojas" ></span>
     </div>
     <button type="submit" class="btn btn-primary btn-block">Crear Reporte</button>
 </form>

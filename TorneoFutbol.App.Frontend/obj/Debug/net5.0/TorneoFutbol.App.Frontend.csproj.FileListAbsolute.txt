@@ -152,3 +152,4 @@ C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\ob
 C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Reportes\Index.cshtml.g.cs
 C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Create.cshtml.g.cs
 C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Reportes\Create.cshtml.g.cs
+C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Edit.cshtml.g.cs

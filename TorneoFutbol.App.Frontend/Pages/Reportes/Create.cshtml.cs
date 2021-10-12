@@ -24,8 +24,15 @@ namespace TorneoFutbol.App.Frontend.Pages.Reportes
         }
          public IActionResult OnPost(Reporte reporte)
         {
+            if(ModelState.IsValid)
+            {
             _repoReporte.AddReporte(reporte);
-            return RedirectToPage("Index");
+            return RedirectToPage("Index");   
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }
