@@ -13,6 +13,7 @@ namespace TorneoFutbol.App.Frontend.Pages.Equipos
     {
         private readonly IRepositorioEquipo _repoEquipo;
         public Equipo equipos {get; set;}
+
         public DetailsModel(IRepositorioEquipo repoEquipo)
         {
             _repoEquipo = repoEquipo;

@@ -8,10 +8,11 @@ using TorneoFutbol.App.Persistencia;
 using TorneoFutbol.App.Dominio;
 
 namespace TorneoFutbol.App.Frontend.Director_Tecnico
+{
     public class EditModel : PageModel
     {
         private readonly IRepositorioDirectorTecnico _repoDirectorTecnico;
-        public Director_Tecnico director_tecnico {get; set;}
+        public DirectorTecnico director_tecnico {get; set;}
         public EditModel(IRepositorioDirectorTecnico repoDirectorTecnico)
         {
             _repoDirectorTecnico = repoDirectorTecnico;
@@ -31,7 +32,7 @@ namespace TorneoFutbol.App.Frontend.Director_Tecnico
         }
         public IActionResult OnPost(DirectorTecnico director_tecnico)
         {
-            _repoDirectorTecnico.UpdateDirectorTTecnico(director_tecnico);
+            _repoDirectorTecnico.UpdateDirectorTecnico(director_tecnico);
             return RedirectToPage("Index");
         } 
     }
