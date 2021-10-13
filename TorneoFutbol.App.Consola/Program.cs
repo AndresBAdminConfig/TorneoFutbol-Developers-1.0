@@ -9,32 +9,32 @@ namespace TorneoFutbol.App.Consola
         private static IRepositorioReporte _repoReporte =  new RepositorioReporte();
         private static IRepositorioJugador _repoJugador = new RepositorioJugador();
         private static IRepositorioMunicipio _repoMunicipio = new RepositorioMunicipio();
-        private static IRepositorioGoles _repoGoles = new RepositorioGoles();
-        private static IRepositorioArbitros _repoArbitros = new RepositorioArbitros();
-        private static IRepositorioPartidos _repoPartidos = new RepositorioPartidos();
+        private static IRepositorioGol _repoGoles = new RepositorioGol();
+        private static IRepositorioArbitro _repoArbitros = new RepositorioArbitro();
+        private static IRepositorioPartido _repoPartidos = new RepositorioPartido();
         private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico();
         private static IRepositorioDesempeñoEquipo _repoDesempeñoEquipo = new RepositorioDesempeñoEquipo();
-
+        private static IRepositorioEquipo _repoEquipo = new RepositorioEquipo();
 
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //AddEstadio();
+            AddEstadio();
             //DeleteEstadio();
             //IndexEstadios();
-            //AddReporte();
+            AddReporte();
             //DeleteReporte();
             //IndexReportes();
-            //AddJugadores();
+            AddJugadores();
             //DeleteJugador();
             //IndexJugador();
-            //AddMunicipio();
+            AddMunicipio();
             //DeleteMunicipio();
             //IndexMunicipio();
-            //AddPartidos();
+            AddPartidos();
             //IndexPartido();
             //DeletePartidos();
-            //AddDesempeñoEquipos();
+            AddDesempeñoEquipos();
             //IndexDesempeñoEquipos();
             //DeleteDesempeñoEquipos();
             //Goles
@@ -42,11 +42,11 @@ namespace TorneoFutbol.App.Consola
             //IndexGoles();
             //DeleteGoles();
             //Arbitros
-            //AddArbitros();
+            AddArbitros();
             //IndexArbitros();
             //DeleteArbitros();
             //DirectorTecnico
-            //AddDirectorTecnico();
+            AddDirectorTecnico();
             //IndexDirectorTecnico();
             //DeleteDirectorTecnico();
         }
@@ -217,7 +217,7 @@ namespace TorneoFutbol.App.Consola
                 Telefono = "3021654",
                 Colegio = "Normal Superior Sol"
             };
-            _repoArbitros.AddArbitros(arbitro);
+            _repoArbitros.AddArbitros(Arbitro);
         }
         
         private static void IndexArbitros()
@@ -253,6 +253,28 @@ namespace TorneoFutbol.App.Consola
         private static void DeleteDirectorTecnico()
         {
             _repoDirectorTecnico.DeleteDirectorTecnico(2);
+        }
+        
+
+        private static void AddEquipo()
+        {
+            var Equipo = new Equipo
+            {
+                Nombre = "Juanito",
+            };
+            _repoEquipo.AddEquipo(Equipo);
+        }
+        
+        private static void IndexEquipo()
+        {
+            foreach (var Equipo in _repoEquipo.GetAllEquipo())
+            {
+                Console.WriteLine(Equipo.Nombre);
+            }
+        }
+        private static void DeleteEquipo()
+        {
+            _repoEquipo.DeleteEquipo(2);
         }
     }
 }

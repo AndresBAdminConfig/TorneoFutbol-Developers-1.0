@@ -1,0 +1,25 @@
+@page
+@using TorneoFutbol.App.Dominio;
+@model TorneoFutbol.App.Frontend.Director_Tecnico.CreateModel
+@{
+}
+<h1>Nuevo Director Tecnico</h1>
+<form method="post">
+    <div class="form -group">
+        <label asp-for="director_tecnico.Nombre"></label>
+        <input asp-for="director_tecnico.Nombre" class="form-control">
+        <span asp-validation-for="director_tecnico.Nombre" class= "text-danger"></span>
+    </div>
+    <div class="form -group">
+        <label asp-for="director_tecnico.Documento"></label>
+        <input asp-for="director_tecnico.Documento" class="form-control"> 
+        <span asp-validation-for="director_tecnico.Documento" class= "text-danger"></span>
+    </div>
+    <div class="form -group">
+        <label asp-for="director_tecnico.Telefono"></label>
+        <input asp-for="director_tecnico.Telefono" class="form-control"> 
+        <span asp-validation-for="director_tecnico.Telefono" class= "text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success btn-block">Crear Director Tecnico</button>
+</form>
+<a class="btn btn-success" asp-page="./Index">Volver</a>

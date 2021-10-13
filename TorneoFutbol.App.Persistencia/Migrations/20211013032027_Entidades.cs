@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TorneoFutbol.App.Persistencia.Migrations
 {
@@ -12,10 +13,10 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Documento = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Colegio = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Documento = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    Telefono = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    Colegio = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -46,9 +47,9 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Documento = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Nombre = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Documento = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
+                    Telefono = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -99,8 +100,8 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nombre = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
+                    Direccion = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
                     MunicipiosId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -120,7 +121,7 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nombre = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     MunicipiosId = table.Column<int>(type: "int", nullable: true),
                     DesempeñoequiposId = table.Column<int>(type: "int", nullable: true),
                     PartidoId = table.Column<int>(type: "int", nullable: true)
@@ -154,9 +155,9 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    MarcadorFinal = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TarjetasAmarillas = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TarjetasRojas = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MarcadorFinal = table.Column<string>(type: "nvarchar(3)", maxLength: 3, nullable: false),
+                    TarjetasAmarillas = table.Column<string>(type: "nvarchar(2)", maxLength: 2, nullable: false),
+                    TarjetasRojas = table.Column<string>(type: "nvarchar(1)", maxLength: 1, nullable: false),
                     PartidosId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -198,7 +199,7 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    MinutoGol = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MinutoGol = table.Column<DateTime>(type: "datetime2", nullable: false),
                     JugadoresId = table.Column<int>(type: "int", nullable: true),
                     ReporteId = table.Column<int>(type: "int", nullable: true)
                 },
