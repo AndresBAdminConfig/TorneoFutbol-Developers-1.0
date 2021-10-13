@@ -2,3 +2,42 @@
 @model TorneoFutbol.App.Frontend.pages.DesempeñoEquipo.EditModel
 @{
 }
+<h1>Listado De Desempeño</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="DesempeñoEquipo.Id"></label>
+        <input asp-for="Partido.Id" class ="form-control" readonly>
+    </div>
+    <div class="form-group">
+        <label asp-for="DesempeñoEquipo.Cantidad_Partidos_Jugados"></label>
+        <input asp-for="Partido.Cantidad_Partidos_Jugados" class ="form-control" >
+        <span asp-validation-for="Desempeño.Cantidad_Partidos_Jugados" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Desempeño.Cantidad_Partidos_Ganados"></label>
+        <input asp-for="Desempeño.Cantidad_Partidos_Ganados" class ="form-control">
+        <span asp-validation-for="Desempeño.Cantidad_Partidos_Ganados" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Desempeño.Cantidad_Partidos_Empatados"></label>
+        <input asp-for="Desempeño.Cantidad_Partidos_Empatados" class ="form-control">
+        <span asp-validation-for="Desempeño.Cantidad_Partidos_Empatados" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Desempeño.GF"></label>
+        <input asp-for="Desempeño.GF" class ="form-control">
+        <span asp-validation-for="Desempeño.GF" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Desempeño.GC"></label>
+        <input asp-for="Desempeño.GC" class ="form-control">
+        <span asp-validation-for="Desempeño.GC" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Desempeño.Puntos"></label>
+        <input asp-for="Desempeño.Puntos" class ="form-control">
+        <span asp-validation-for="Desempeño.Puntos" class="text-danger"></span>
+    </div>
+     <button type="submit" class="btn btn-primary">Editar Desempeño</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
