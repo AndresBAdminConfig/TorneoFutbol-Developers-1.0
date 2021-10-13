@@ -9,7 +9,7 @@ namespace TorneoFutbol.App.Dominio
         [Required(ErrorMessage = "El campo es obligatorio")]
         public DateTime MinutoGol { get; set; }
         //Relacion Goles con Jugador
-        public Jugador jugador {get; set;}
+        public Jugador Jugadores {get; set;}
         
 
     }
