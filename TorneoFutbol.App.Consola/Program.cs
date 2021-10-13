@@ -55,8 +55,8 @@ namespace TorneoFutbol.App.Consola
         {
             var estadio = new Estadio
             {
-                Nombre = "Atanasio Girardot",
-                Direccion = "Carrera 74#48010"
+                Nombre = "Nemesio Camacho El Campín",
+                Direccion = "Carrera 30 y calle 57"
             };
             _repoEstadio.AddEstadio(estadio);
         }
@@ -75,9 +75,9 @@ namespace TorneoFutbol.App.Consola
         {
             var Reportes = new Reporte
             {
-                MarcadorFinal = "1 - 1",
-                TarjetasAmarillas = "0",
-                TarjetasRojas = "0"
+                MarcadorFinal = "1 - 4",
+                TarjetasAmarillas = "5",
+                TarjetasRojas = "1"
             };
             _repoReporte.AddReporte(Reportes);
         } 
