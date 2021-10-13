@@ -9,31 +9,31 @@ using TorneoFutbol.App.Dominio;
 
 namespace TorneoFutbol.App.Frontend.Municipios
 {
-    public class CreateModel : PageModel
+    public class EditModel : PageModel
     {
         private readonly IRepositorioMunicipio _repoMunicipio;
         public Municipio municipio {get; set;}
-        public CreateModel(IRepositorioMunicipio repoMunicipio)
+        public EditModel(IRepositorioMunicipio repoMunicipio)
         {
             _repoMunicipio = repoMunicipio;
         }
-        public void OnGet()
-        {
-            municipio = new Municipio();
-        }
 
-        public IActionResult OnPost(Municipio municipio)
+        public IActionResult OnGet(int id)
         {
-            if (ModelState.IsValid)
+            municipio = _repoMunicipio.GetMunicipio(id);
+            if (municipio == null)
             {
-                _repoMunicipio.AddMunicipio(municipio);
-                return RedirectToPage("Index");
+                return NotFound();
             }
             else
             {
                 return Page();
             }
-            
         }
+        public IActionResult OnPost(Municipio municipio)
+        {
+            _repoMunicipio.UpdateMunicipio(municipio);
+            return RedirectToPage("Index");
+        } 
     }
 }
