@@ -2,3 +2,19 @@
 @model TorneoFutbol.App.Frontend.Pages.Reportes.DetailsModel
 @{
 }
+<h1>Detalles del Reporte</h1>
+<table class="table">
+            <tr>
+                <th scope="col">Marcador Final</th>
+                <td>@Model.reporte.MarcadorFinal</td>
+            </tr>
+            <tr>
+                <th scope="col">Tarjetas Amarillas</th>
+                <td>@Model.reporte.TarjetasAmarillas</td>
+            </tr> 
+            <tr>
+                <th scope="col">Tarjetas Rojas</th>
+                <td>@Model.reporte.TarjetasRojas</td>
+            </tr>       
+</table>
+<a class="btn btn-secondary" asp-page = "./Index"> Volver </a>

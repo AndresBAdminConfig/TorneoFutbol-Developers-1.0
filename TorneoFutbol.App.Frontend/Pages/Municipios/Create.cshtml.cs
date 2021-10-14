@@ -19,6 +19,20 @@ namespace TorneoFutbol.App.Frontend.Municipios
         }
         public void OnGet()
         {
+            municipio = new Municipio();
+        }
+
+        public IActionResult OnPost(Municipio municipio)
+        {
+            if (ModelState.IsValid)
+            {
+                _repoMunicipio.AddMunicipio(municipio);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
             
         }
     }

@@ -16,7 +16,10 @@
             {
                 <tr>
                     <td>@municipio.Nombre</td>
-                    <td><a class="btn btn-success" asp-page="./Details" asp-route-id="@municipio.Id">Detalle</a></td>
+                    <td>
+                        <a class="btn btn-success" asp-page="./Details" asp-route-id="@municipio.Id">Detalle</a>
+                        <a class="btn btn-success" asp-page="./Edit" asp-route-id="@municipio.Id">Editar</a>
+                    </td>
                 </tr>
             }
         </tbody>

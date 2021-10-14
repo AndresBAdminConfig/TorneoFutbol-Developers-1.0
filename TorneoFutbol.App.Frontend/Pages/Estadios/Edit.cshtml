@@ -1,0 +1,22 @@
+﻿@page
+@using TorneoFutbol.App.Dominio;
+@model TorneoFutbol.App.Frontend.Page.Estadios.EditModel
+@{
+}
+<h1>Modificación Estadio</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="estadio.Id"></label>
+        <input asp-for="estadio.Id" class="form-control" readonly">
+    </div>
+    <div class="form-group">
+        <label asp-for="estadio.Nombre"></label>
+        <input asp-for="estadio.Nombre" class="form-control" placeholder="Digíte el Nombre del Estadio">
+    </div>
+    <div class="form-group">
+        <label asp-for="estadio.Direccion"></label>
+        <input asp-for="estadio.Direccion" class="form-control" placeholder="Digíte la Dirección del Estadio">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Actualizar Estadio</button>
+</form>
+<a class="btn btn-secondary" asp-page=./Index >Volver</a>

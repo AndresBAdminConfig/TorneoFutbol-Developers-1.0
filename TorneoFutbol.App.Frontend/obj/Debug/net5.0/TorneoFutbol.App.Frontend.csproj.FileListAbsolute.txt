@@ -388,3 +388,24 @@ C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Fro
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Reportes\Index.cshtml.g.cs
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Edit.cshtml.g.cs
 C:\Users\maure\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Goles\Edit.cshtml.g.cs
+C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Create.cshtml.g.cs
+C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Reportes\Create.cshtml.g.cs
+C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Edit.cshtml.g.cs
+C:\Users\Felipe\Desktop\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Reportes\Edit.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Create.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Edit.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Create.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Edit.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Goles\Create.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Goles\Edit.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Reportes\Create.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Reportes\Edit.cshtml.g.cs
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Director_Tecnico\Create.cshtml.g.cs
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Director_Tecnico\Edit.cshtml.g.cs
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Create.cshtml.g.cs
+C:\Users\Leidy Moreno\OneDrive\Documentos\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Edit.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Director_Tecnico\Create.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Director_Tecnico\Edit.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Create.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Edit.cshtml.g.cs
+C:\Users\USUARIO\Documents\GitHub\TorneoFutbol-Developers-1.0\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Edit.cshtml.g.cs

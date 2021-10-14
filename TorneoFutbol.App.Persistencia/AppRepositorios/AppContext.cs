@@ -10,7 +10,7 @@ namespace TorneoFutbol.App.Persistencia
         public DbSet<DirectorTecnico> DirectoresTecnicos {get; set;}
         public DbSet<Equipo> Equipos {get; set;}
         public DbSet<Estadio> Estadios{get; set;}
-        public DbSet<Gol> Gol{get; set;}
+        public DbSet<Gol> Goles{get; set;}
         public DbSet<Municipio> Municipios{get; set;}
         public DbSet<Partido> Partidos{get; set;}
         public DbSet<Reporte> Reportes{get; set;}
