@@ -20,7 +20,7 @@ namespace TorneoFutbol.App.Frontend.Pages.Partido
         }
         public IActionResult OnGet(int id)
         {
-            Partido _repoPartido.GetPartido(id);
+            Partido _repoPartido.GetPartidos(id);
             if (partido ==null)
             {
                 return NotFound();

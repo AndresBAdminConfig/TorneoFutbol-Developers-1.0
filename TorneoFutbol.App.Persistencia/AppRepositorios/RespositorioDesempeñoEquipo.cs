@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using TorneoFutbol.App.Dominio;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioDesempeñoEquipo : IRepositorioDesempeñoEquipo
@@ -25,9 +27,9 @@ namespace TorneoFutbol.App.Persistencia
             _appContext.DesempeñoEquipos.Remove(DesempeñoEquipoEncontrado);
             _appContext.SaveChanges();
         }
-        public DesempeñoEquipo GetDesempeñoEquipo(int IdDesempeñoEquipos)
+        DesempeñoEquipo IRepositorioDesempeñoEquipo.GetDesempeñoEquipo(int idDesempeño)
         {
-            return _appContext.DesempeñoEquipos.Find(IdDesempeñoEquipos);
+            return _appContext.DesempeñoEquipos.Find(idDesempeño);
         }  
         public DesempeñoEquipo UpdateDesempeñoEquipo(DesempeñoEquipo desempeñoequipos)
         {

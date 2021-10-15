@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TorneoFutbol.App.Dominio;
 using TorneoFutbol.App.Persistencia;
 
-namespace TorneoFutbol.App.Frontend.pages.Partido
+namespace TorneoFutbol.App.Frontend.Pages.Partidos
 {
-    public class EditModel : PageModel
+     public class EditModel : PageModel
     {
         private readonly IRepositorioPartido _repoPartido;
         public Partido partido {get; set;}

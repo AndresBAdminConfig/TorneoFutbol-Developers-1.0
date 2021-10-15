@@ -1,0 +1,65 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.Pages.Desempeños.DetailsModel
+@{
+}
+<h1>Listado de Desempeño</h1>
+<table class="table table-dark">
+    <tr>
+        <th scope="col">Cantidad_Partidos_Jugados</th>
+        <td>@Model.Desempeño.Partidos_Jugados</td>
+    </tr>
+    <tr>
+        <th scope="col">Cantidad_Partidos_Ganados</th>
+        <td>@Model.Desempeño.Partidos_Ganados</td>
+    </tr>
+    <tr>
+        <th scope="col">Cantidad_Partidos_Empatados</th>
+        <td>@Model.Desempeño.Partidos_Empatados</td>
+    </tr>
+    <tr>
+        <th scope="col">GF</th>
+        <td>@Model.Desempeño.GF</td>
+
+    </tr>
+    <tr>
+        <th scope="col">GC</th>
+        <td>@Model.Desempeño.GC</td>
+    </tr>
+    <tr>
+        <th scope="col">Puntos</th>
+        <td>@Model.Desempeño.Puntos</td>
+    </tr>
+    <tr>
+        <th>scope="col">Partido</th>
+        @if (Model.Desempeño.Partido ==null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddPartido" asp-route-id="@Model.Desempeño.Id">
+                    Asignar partido    
+                </a>
+            </td>
+            
+        }
+        else
+        {
+            <td>@Model.Desempeño.Partido.Id</td>
+        }
+    </tr>
+    tr>
+        <th>scope="col">Equipo</th>
+        @if (Model.Desempeño.Equipo ==null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddEquipo" asp-route-id="@Model.Desempeño.Id">
+                    Asignar Equipos    
+                </a>
+            </td>
+            
+        }
+        else
+        {
+            <td>@Model.Desempeño.Equipo.Id</td>
+        }
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

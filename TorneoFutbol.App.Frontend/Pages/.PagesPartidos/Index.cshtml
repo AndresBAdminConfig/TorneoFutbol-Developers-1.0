@@ -1,5 +1,5 @@
 ﻿@page
-@model TorneoFutbol.App.Frontend.Pages.Partido.IndexModel
+@model TorneoFutbol.App.Frontend.Pages.Partidos.IndexModel
 @{
 }
 <h1>Listado de Partidos</h1>
@@ -17,7 +17,7 @@
         </tr>
     </thead>
     </tbody>
-        @foreach (var partido in Model.partido)
+        @foreach (var partido in Model.partidos)
         {
             <tr>
                 <td>@partidos.FechaHora</td>

@@ -7,20 +7,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TorneoFutbol.App.Dominio;
 using TorneoFutbol.App.Persistencia;
 
-
-namespace TorneoFutbol.App.Frontend.Jugadores
+namespace TorneoFutbol.App.Frontend.Pages.Partido
 {
     public class IndexModel : PageModel
     {
-        private readonly IRepositorioJugador _repoJugador;
-        public IEnumerable<Jugador> jugadores {get; set;}
-        public IndexModel(IRepositorioJugador repoJugador)
+        private readonly IRepositorioPartido _RepoPartido;
+        public IEnumerable<Partido> partido {get; set;}
+        public IndexModel(IRepositorioPartido RepoPartido)
         {
-            _repoJugador = repoJugador;
+            _RepoPartido = RepoPartido;
+
         }
         public void OnGet()
         {
-            jugadores = _repoJugador.GetAllJugador();
+            partido = _RepoPartido.GetAllPartido();
         }
     }
 }

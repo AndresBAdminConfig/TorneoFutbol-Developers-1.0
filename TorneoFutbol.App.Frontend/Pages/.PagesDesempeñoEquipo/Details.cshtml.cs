@@ -7,22 +7,24 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TorneoFutbol.App.Dominio;
 using TorneoFutbol.App.Persistencia;
 
-namespace TorneoFutbol.App.Frontend.pages.DesempeñoEquipo
+namespace TorneoFutbol.App.Frontend.Pages.DesempeñoEquipo
 {
-    public class EditModel : PageModel
+    
+
+    public class DetailsModel : PageModel
     {
-        private readonly IrepositorioDesempeñoEquipo _repoDesempeño;
+        private readonly IRepositorioDesempeñoEquipo _repoDesempeño;
         public DesempeñoEquipo Desempeño {get; set;}
-        public EditModel(IrepositorioDesempeñoEquipo repoDesempeño)
+        public DetailsModel(IRepositorioDesempeñoEquipo repoDesempeño)
         {
             _repoDesempeño = repoDesempeño;
         }
-        public IActionResult OnGet(int id)
+        public void OnGet(int id)
         {
-            Desempeño = _repoDesempeño.getDesempeño(id);
-            if (Desempeño == null)
+            DesempeñoEquipo _repoDesempeño.GetDesempeños(id);
+            if (Desempeño ==null)
             {
-                return = NotFound();
+                return NotFound();
             }
             else
             {
@@ -31,7 +33,7 @@ namespace TorneoFutbol.App.Frontend.pages.DesempeñoEquipo
         }
         public IActionResult OnPost(DesempeñoEquipo Desempeño)
         {
-            _repoDesempeño.UpdateDesempeñoEquipo(Desempeño);
+            _repoDesempeño.AddDesempeñoEquipo(Desempeño);
             return RedirectToPage("Index");
         }
     }

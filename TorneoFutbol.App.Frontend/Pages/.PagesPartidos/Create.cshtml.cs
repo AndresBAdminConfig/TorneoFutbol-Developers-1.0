@@ -4,8 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-
-namespace TorneoFutbol.App.Frontend.Pages.Partido
+using TorneoFutbol.App.Dominio;
+using TorneoFutbol.App.Persistencia;
+namespace TorneoFutbol.App.Frontend.Pages.Partidos
 {
     public class CreateModel : PageModel
     {
@@ -18,6 +19,19 @@ namespace TorneoFutbol.App.Frontend.Pages.Partido
         public void OnGet()
         {
             partido = New Partido();
+        }
+         public IActionResult OnPost(Partido partido)
+        {
+            if (ModelState.IsValid)
+            {
+                _repoPartido.AddPartidos(partido);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
+            
         }
         
     }

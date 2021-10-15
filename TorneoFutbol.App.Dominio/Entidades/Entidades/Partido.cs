@@ -7,20 +7,25 @@ namespace TorneoFutbol.App.Dominio
     {
         // Identificador único de cada persona
         public int Id { get; set; }
-        [Requiered(ErrorMessage = "Los Datos Son Obligatorios")]
+        [Required(ErrorMessage = "Los Datos Son Obligatorios")]
         [StringLength(10, ErrorMessage = "Maximo 10 Caracteres")]
+        [Display(Name= "Fecha Y Hora")]
         public String FechaHora { get; set; }
-        [Requiered(ErrorMessage = "El Nombre Del Equipo Es Obligatorio")]
+        [Required(ErrorMessage = "El Nombre Del Equipo Es Obligatorio")]
         [StringLength(30, ErrorMessage = "Maximo 30 Caracteres")]
+        [Display(Name= "Equipo Local")]
         public string EquipoLocal { get; set; }
+        [Display(Name= "Marcador Inicial")]
         public String MarcadorInicial { get; set; }
-        [Requiered(ErrorMessage = "El Nombre Del Equipo Es Obligatorio")]
+        [Required(ErrorMessage = "El Nombre Del Equipo Es Obligatorio")]
         [StringLength(30, ErrorMessage = "Maximo 30 Caracteres")]
+        [Display(Name= "Equipo Visitante")]
         public String EquipoVisitante { get; set; }
-        [Requiered(ErrorMessage = "El Marcador Es Obligatorio")]
+        [Required(ErrorMessage = "El Marcador Es Obligatorio")]
         [StringLength(10, ErrorMessage = "Maximo 10Caracteres")]
+        [Display(Name= "Marcador Final")]
         public string MarcadorFinal { get; set; }
-        [Requiered(ErrorMessage = "El Nombre del Colegio Es Obligatorio")]
+        [Required(ErrorMessage = "El Nombre del Colegio Es Obligatorio")]
         [StringLength(30, ErrorMessage = "Maximo 30 Caracteres")]
         public string Colegio { get; set; }
         //Relacion Partido y Equipos
