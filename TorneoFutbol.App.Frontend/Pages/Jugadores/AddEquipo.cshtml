@@ -1,0 +1,22 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.Jugadores.AddEquipoModel
+@{
+}
+<h1>Asignar Equipo</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="idJugador">Jugador</label>
+        <input type="text" id="idJugador" name="idJugador" class="form-control" value="@Model.jugador.Id" readonly>
+    </div>
+    <div class="form-group">
+        <label for="idEquipo">Equipo</label>
+        <select id="idEquipo" name="idEquipo" class="form-control">
+            @foreach (var equipo in Model.equipos)
+            {
+                <option value="@equipo.Id">@equipo.Nombre</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success">Asignar Equipo</button>
+</form>
+<a class="btn btn-success" asp-page="./Index">Volver</a>
