@@ -6,10 +6,12 @@ namespace TorneoFutbol.App.Persistencia
     {
         Partido AddPartidos(Partido partidos);
         IEnumerable<Partido> GetAllPartidos();
-        void DeletePartidos (int idPartidos);
+        void DeletePartidos(int idPartidos);
         Partido UpdatePartidos(Partido partidos);
         Partido GetPartidos(int idPartidos);
-
+        Arbitro AsignarArbitro(int idPartidos, int idArbitro);
+        IEnumerable<Partido> SearchPartidos(string colegio);
 
     }
+    
 }

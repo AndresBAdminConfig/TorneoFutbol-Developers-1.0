@@ -16,11 +16,20 @@ namespace TorneoFutbol.App.Frontend.Pages.Partido
         public IndexModel(IRepositorioPartido RepoPartido)
         {
             _RepoPartido = RepoPartido;
-
         }
-        public void OnGet()
+        public string bActual{get; set;}
+        public void OnGet(string b)
         {
-            partido = _RepoPartido.GetAllPartido();
+            if (String.IsNullOrEmpty(b))
+            {
+                bActual = "";
+                partido = _RepoPartido.GetAllPartidos();
+            }
+            else
+            {
+                bActual = b;
+                partido = _RepoPartido.SearchPartidos();
+            }
         }
     }
 }

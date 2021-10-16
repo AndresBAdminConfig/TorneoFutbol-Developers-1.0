@@ -1,4 +1,5 @@
 ﻿@page
+@using TorneoFutbol.App.Dominio
 @model TorneoFutbol.App.Frontend.Pages.Partidos.IndexModel
 @{
 }
@@ -35,3 +36,19 @@
         }
     </tbody>
 </table>
+<form method="get">
+    <div class="form-group">
+        <label for="b">Buscar</label>
+        <input name="b" id="b" class="form-control" asp-for="@Model.bActual">
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
+<form method="get">
+    <div class="form-group">
+        <label for="c">Colegio</label>
+        <select name="c" id="c" asp-items="GetList<Colegio>()" class="form-control" asp-for="@Model.cActual">
+            <option value="-1">Ver Todos</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Filtrar</button>
+</form>

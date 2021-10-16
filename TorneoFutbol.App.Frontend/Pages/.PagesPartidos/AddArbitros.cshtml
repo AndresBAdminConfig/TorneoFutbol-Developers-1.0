@@ -1,0 +1,22 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.Pages.Partidos.AddArbitrosModel
+@{
+}
+<h1>Asignar Arbitro</h1>
+<form method="post">
+    <div class="form.group">
+        <label for="idPartido">Partido</label>
+        <input type="text" id="idPartido" name="idPartido" class="form-control" value="@Model.partido.Id" readonly>
+    </div>
+    <div class="form-group">
+        <label for="idArbitro">Arbitro</label>
+        <select name="idArbitro" id="idArbitro" class="form-control">
+            @foreach (var arbitro in Model.arbitros)
+            {
+                <option value= "@arbitro.Id">@arbitro.Nombre</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Asignar Arbitro</button>
+</form>
+<a class="btn btn-secundary" asp-page="./Index">Volver</a>

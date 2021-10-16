@@ -25,5 +25,54 @@
         <th scope="col">Colegio</th>
         <td>@Model.Partidos.Colegio</td>
     </tr>
+    <tr>
+        <th scope="col">Equipos</th>
+        @if (Model.partido.Equipo == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddEquipo" asp-rute-id="@Model.partido.Id" >
+                    Asignar Equipos
+                </a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.partido.Equipo.Nombre</td>
+        }
+        <td>@Model.Partidos.Equipo"></td>
+    </tr>
+    <tr>
+        <th scope="col">Arbitros</th>
+        @if (Model.partido.Arbitro == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddArbitro" asp-rute-id="@Model.partido.Id" >
+                    Asignar Arbitros
+                </a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.partido.Arbitro.Nombre</td>
+        }
+        <td>@Model.Partidos.Arbitro"></td>
+    </tr>
+    <tr>
+        <th scope="col">Estadios</th>
+        @if (Model.partido.Estadio == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddEstadio" asp-rute-id="@Model.partido.Id" >
+                    Asignar Estadios
+                </a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.partido.Estadio.Nombre</td>
+        }
+        <td>@Model.Partidos.Estadio"></td>
+    </tr>
+
 </table>
 <a class="btn btn-primary" asp-page="./Index">Volver</a>
