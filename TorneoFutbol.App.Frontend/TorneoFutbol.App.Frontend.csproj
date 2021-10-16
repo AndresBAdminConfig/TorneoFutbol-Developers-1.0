@@ -5,6 +5,10 @@
     <ProjectReference Include="..\TorneoFutbol.App.Dominio\TorneoFutbol.App.Dominio.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
