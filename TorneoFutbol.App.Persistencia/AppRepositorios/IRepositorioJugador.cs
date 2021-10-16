@@ -11,5 +11,6 @@ namespace TorneoFutbol.App.Persistencia
         Jugador GetJugador(int idJugador);
         Jugador UpdateJugador(Jugador jugador);
         Equipo AsignarEquipo(int idJugador, int idEquipo);
+        public IEnumerable<Jugador> SearchJugador(string nombre);
     }
 }

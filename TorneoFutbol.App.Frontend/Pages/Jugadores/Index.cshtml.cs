@@ -14,13 +14,24 @@ namespace TorneoFutbol.App.Frontend.Jugadores
     {
         private readonly IRepositorioJugador _repoJugador;
         public IEnumerable<Jugador> jugadores {get; set;}
+        public string bActual{get; set;}
         public IndexModel(IRepositorioJugador repoJugador)
         {
             _repoJugador = repoJugador;
         }
-        public void OnGet()
+        public void OnGet(string b)
         {
-            jugadores = _repoJugador.GetAllJugador();
+            if (String.IsNullOrEmpty(b))
+            {
+                bActual="";
+                jugadores = _repoJugador.GetAllJugador();
+            }
+            else
+            {
+                bActual = b;
+                jugadores = _repoJugador.SearchJugador(b);
+            } 
         }
+        
     }
 }

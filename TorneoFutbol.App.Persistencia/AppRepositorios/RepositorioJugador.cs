@@ -63,5 +63,10 @@ namespace TorneoFutbol.App.Persistencia
             }
             return null;
         }
+        IEnumerable<Jugador> IRepositorioJugador.SearchJugador(string nombre)
+        {
+            return _appContext.Jugadores
+                        .Where(p => p.Nombre.Contains(nombre));
+        }
     }
 }
