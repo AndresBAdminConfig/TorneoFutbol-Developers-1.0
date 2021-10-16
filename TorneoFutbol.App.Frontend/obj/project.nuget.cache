@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "OM2Nkf9FqIIZ9Xot2RqxyZB47hmfy17GG1VOrE5+t5vmD/99kF06NvdbrQuhY+wGLaCCDvA6ne6CPsynPNMxWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
@@ -99,5 +100,11 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "WktHTvj4Tq9B2HwP0jIOXxholqtxd2WQzgXeYwIZMUE4P4Gw8PLGfOhiR2dUTCMLWdKcLPPdWonwuY63hcMTdg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Felipe\\Desktop\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> origin
   "logs": []
 }

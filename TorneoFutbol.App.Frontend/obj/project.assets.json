@@ -5737,11 +5737,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Felipe\\.nuget\\packages\\": {}
+>>>>>>> origin
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
       "projectName": "TorneoFutbol.App.Frontend",
       "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
@@ -5750,6 +5755,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+      "projectUniqueName": "C:\\Users\\Felipe\\Desktop\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
+      "projectName": "TorneoFutbol.App.Frontend",
+      "projectPath": "C:\\Users\\Felipe\\Desktop\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
+      "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Felipe\\Desktop\\GitHub\\TorneoFutbol-Developers-1.0\\TorneoFutbol.App.Frontend\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> origin
       ],
       "originalTargetFrameworks": [
         "net5.0"
